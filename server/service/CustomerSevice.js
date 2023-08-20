@@ -7,15 +7,9 @@ async function getAllCustomer() {
 
 // get category by id
 async function getCustomerByID(id) {
-    let customer = await Customer.findById(id);
-    return customer;
+    return Customer.findById(id);
 }
 
-// get category by name
-async function getCustomerByName(name) {
-    let customer = await Customer.find({"name": name});
-    return customer;
-}
 
 // create category
 async function createCustomer(customer) {
@@ -25,20 +19,17 @@ async function createCustomer(customer) {
 
 // update category
 async function updateCustomer(id, body) {
-    let customer = await Customer.findByIdAndUpdate(id, body, {new: true});
-    return customer;
+    return Customer.findByIdAndUpdate(id, body, {new: true});
 }
 
 // delete category
 async function deleteCustomer(id) {
-    let customer = await Customer.findByIdAndDelete(id);
-    return customer;
+    return Customer.findByIdAndDelete(id);
 }
 
 module.exports = {
     getAllCustomer,
     getCustomerByID,
-    getCustomerByName,
     createCustomer,
     updateCustomer,
     deleteCustomer

@@ -1,0 +1,4094 @@
+{
+	"info": {
+		"_postman_id": "9852fdb4-3c6e-44bd-9bf0-bb9142963726",
+		"name": "Backend API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25978623"
+	},
+	"item": [
+		{
+			"name": "RetailProject",
+			"item": [
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "get all categories",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{own}}/api/categories/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all categories",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/categories/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"categories",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "769"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"301-9n5fhmD8xX1/Sk4cEuR4wkgKcgc\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 04:45:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a12\",\n        \"name\": \"Electronics\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a13\",\n        \"name\": \"Clothing\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a14\",\n        \"name\": \"Books\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a15\",\n        \"name\": \"Home Decor\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a16\",\n        \"name\": \"Sports Equipment\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a17\",\n        \"name\": \"Beauty and Personal Care\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a18\",\n        \"name\": \"Toys and Games\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a19\",\n        \"name\": \"Groceries\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a1a\",\n        \"name\": \"Furniture\"\n    },\n    {\n        \"_id\": \"64d5572acd7e6551e43a1a1b\",\n        \"name\": \"Health and Wellness\"\n    },\n    {\n        \"_id\": \"64d5608fc8e14c4687465e7e\",\n        \"name\": \"Foods\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64d560fdc8e14c4687465e83\",\n        \"name\": \"testing\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64d5b75590cdd093b7bb7ce2\",\n        \"name\": \"essential thing update\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get category by id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{own}}/api/categories/64d64ab6d5adbe20e89af113",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										"64d64ab6d5adbe20e89af113"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get category by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/categories/64d5572acd7e6551e43a1a14",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"categories",
+												"64d5572acd7e6551e43a1a14"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "49"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"31-yKnYhz1YwSjCSLTJorhUF0wK/rE\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 04:48:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d5572acd7e6551e43a1a14\",\n    \"name\": \"Books\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Beer\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/categories/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create category",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"essential things\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/categories/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"categories",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "68"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"44-7tJFJv/FRv8S7r7DpSW8YGdZXRE\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 04:49:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"essential things\",\n    \"_id\": \"64d5bdbfdf931c325a644a72\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update category by id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Alcohol\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/categories/64e259d80d21288c27807a19",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										"64e259d80d21288c27807a19"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update category by id",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"essential thing update after update\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/categories/64d5b75590cdd093b7bb7ce2",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"categories",
+												"64d5b75590cdd093b7bb7ce2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "87"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"57-rXt8OVh8ZqzpzkBo30b6xI4jHa0\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 04:49:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d5b75590cdd093b7bb7ce2\",\n    \"name\": \"essential thing update after update\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete category by id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{own}}/api/categories/64e259d80d21288c27807a19",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										"64e259d80d21288c27807a19"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete category by id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/categories/64d5bdbfdf931c325a644a72",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"categories",
+												"64d5bdbfdf931c325a644a72"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "68"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"44-4OZ5atfk4IGd1F+MqYSKhAiPLg8\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 04:49:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d5bdbfdf931c325a644a72\",\n    \"name\": \"essential things\",\n    \"__v\": 0\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "stores",
+					"item": [
+						{
+							"name": "get all store",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stores/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stores/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2233"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"8b9-7s+znmYWZ4IrBRUoDAtAqP5mafU\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 23:58:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af120\",\n        \"name\": \"TechZone\",\n        \"address\": {\n            \"street\": \"789 Innovation Avenue\",\n            \"city\": \"Techville\",\n            \"state\": \"Techland\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64d6cb300f8a139790e578d1\"\n        },\n        \"phoneNumber\": \"555-111-2222\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af121\",\n        \"name\": \"FashionForward\",\n        \"address\": {\n            \"street\": \"123 Trendy Street\",\n            \"city\": \"Stylesburg\",\n            \"state\": \"Fashionland\",\n            \"postalCode\": \"87654\",\n            \"_id\": \"64d6cb300f8a139790e578d2\"\n        },\n        \"phoneNumber\": \"555-222-3333\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af122\",\n        \"name\": \"GourmetGroceries\",\n        \"address\": {\n            \"street\": \"456 Market Lane\",\n            \"city\": \"Foodville\",\n            \"state\": \"Flavorland\",\n            \"postalCode\": \"24680\",\n            \"_id\": \"64d6cb300f8a139790e578d3\"\n        },\n        \"phoneNumber\": \"555-333-4444\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af123\",\n        \"name\": \"SportsSupreme\",\n        \"address\": {\n            \"street\": \"789 Athletic Drive\",\n            \"city\": \"Sportstown\",\n            \"state\": \"Fitnessland\",\n            \"postalCode\": \"13579\",\n            \"_id\": \"64d6cb300f8a139790e578d4\"\n        },\n        \"phoneNumber\": \"555-444-5555\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af124\",\n        \"name\": \"HealthHub\",\n        \"address\": {\n            \"street\": \"123 Wellness Avenue\",\n            \"city\": \"Healthville\",\n            \"state\": \"Wellnessland\",\n            \"postalCode\": \"97531\",\n            \"_id\": \"64d6cb300f8a139790e578d5\"\n        },\n        \"phoneNumber\": \"555-555-6666\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af125\",\n        \"name\": \"BookNook\",\n        \"address\": {\n            \"street\": \"456 Literary Lane\",\n            \"city\": \"Readsville\",\n            \"state\": \"Bookland\",\n            \"postalCode\": \"86420\",\n            \"_id\": \"64d6cb300f8a139790e578d6\"\n        },\n        \"phoneNumber\": \"555-666-7777\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af126\",\n        \"name\": \"PetParadise\",\n        \"address\": {\n            \"street\": \"789 Pet Street\",\n            \"city\": \"Animalville\",\n            \"state\": \"Petland\",\n            \"postalCode\": \"35791\",\n            \"_id\": \"64d6cb300f8a139790e578d7\"\n        },\n        \"phoneNumber\": \"555-777-8888\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af127\",\n        \"name\": \"HomeHarmony\",\n        \"address\": {\n            \"street\": \"123 Cozy Avenue\",\n            \"city\": \"Homestead\",\n            \"state\": \"Comfortland\",\n            \"postalCode\": \"74125\",\n            \"_id\": \"64d6cb300f8a139790e578d8\"\n        },\n        \"phoneNumber\": \"555-888-9999\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af128\",\n        \"name\": \"ArtisticExpressions\",\n        \"address\": {\n            \"street\": \"456 Creative Court\",\n            \"city\": \"Artville\",\n            \"state\": \"Imaginationland\",\n            \"postalCode\": \"80235\",\n            \"_id\": \"64d6cb300f8a139790e578d9\"\n        },\n        \"phoneNumber\": \"555-999-0000\"\n    },\n    {\n        \"_id\": \"64d6c9d4d5adbe20e89af129\",\n        \"name\": \"OutdoorAdventures\",\n        \"address\": {\n            \"street\": \"789 Nature Trail\",\n            \"city\": \"Explorerville\",\n            \"state\": \"Adventureland\",\n            \"postalCode\": \"62345\",\n            \"_id\": \"64d6cb300f8a139790e578da\"\n        },\n        \"phoneNumber\": \"555-000-1111\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get store by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af120",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										"64d6c9d4d5adbe20e89af120"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af120",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												"64d6c9d4d5adbe20e89af120"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "218"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"da-CK7zB52/GzjAYeKTSX9dOvH7k5A\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 11 Aug 2023 23:59:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d6c9d4d5adbe20e89af120\",\n    \"name\": \"TechZone\",\n    \"address\": {\n        \"street\": \"789 Innovation Avenue\",\n        \"city\": \"Techville\",\n        \"state\": \"Techland\",\n        \"postalCode\": \"54321\",\n        \"_id\": \"64d6cb690f8a139790e578dc\"\n    },\n    \"phoneNumber\": \"555-111-2222\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create store",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mongo Store\",\n    \"address\": {\n        \"street\": \"13th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\"\n    },\n    \"phoneNumber\": \"555-111-8888\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/stores/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Mongo Store\",\n    \"address\": {\n        \"street\": \"13th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\"\n    },\n    \"phoneNumber\": \"555-111-8888\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/stores/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "210"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d2-CCbkyzYUjc5oKDC8+LBtv47Tei4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:02:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Mongo Store\",\n    \"address\": {\n        \"street\": \"13th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\",\n        \"_id\": \"64d6cbf90f8a139790e578de\"\n    },\n    \"phoneNumber\": \"555-111-8888\",\n    \"_id\": \"64d6cbf90f8a139790e578dd\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update store by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mongo Store update\",\n    \"address\": {\n        \"street\": \"14th-15th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\",\n        \"_id\": \"64d6cbf90f8a139790e578de\"\n    },\n    \"phoneNumber\": \"555-111-8888\",\n    \"__v\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/stores/64e25d037fbcabe98f8d3941",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										"64e25d037fbcabe98f8d3941"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Mongo Store\",\n    \"address\": {\n        \"street\": \"14th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\",\n        \"_id\": \"64d6cbf90f8a139790e578de\"\n    },\n    \"phoneNumber\": \"555-111-8888\",\n    \"__v\": 0\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/stores/64d6cbf90f8a139790e578dd",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												"64d6cbf90f8a139790e578dd"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "210"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d2-Al791mKcXbZOsZzGzJrVtiS7eB4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:05:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d6cbf90f8a139790e578dd\",\n    \"name\": \"Mongo Store\",\n    \"address\": {\n        \"street\": \"14th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\",\n        \"_id\": \"64d6cbf90f8a139790e578de\"\n    },\n    \"phoneNumber\": \"555-111-8888\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete store by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stores/64e25d037fbcabe98f8d3941",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										"64e25d037fbcabe98f8d3941"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stores/64d6cbf90f8a139790e578dd",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												"64d6cbf90f8a139790e578dd"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "210"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d2-Al791mKcXbZOsZzGzJrVtiS7eB4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:06:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d6cbf90f8a139790e578dd\",\n    \"name\": \"Mongo Store\",\n    \"address\": {\n        \"street\": \"14th\",\n        \"city\": \"Downtown\",\n        \"state\": \"Lanmadaw\",\n        \"postalCode\": \"2345\",\n        \"_id\": \"64d6cbf90f8a139790e578de\"\n    },\n    \"phoneNumber\": \"555-111-8888\",\n    \"__v\": 0\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "customers",
+					"item": [
+						{
+							"name": "get all customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/customers/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/customers/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"customers",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "5216"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1460-s9EFN1X8kGTMZ405jtD6rvs2OFo\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:07:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0f9\",\n        \"name\": \"John Doe\",\n        \"address\": {\n            \"street\": \"123 Main Street\",\n            \"city\": \"Exampleville\",\n            \"state\": \"CA\",\n            \"postalCode\": \"12345\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e578fb\"\n        },\n        \"phoneNumber\": \"555-123-4567\",\n        \"email\": \"johndoe@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0fa\",\n        \"name\": \"Jane Smith\",\n        \"address\": {\n            \"street\": \"456 Elm Avenue\",\n            \"city\": \"Townsville\",\n            \"state\": \"NY\",\n            \"postalCode\": \"67890\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e578fc\"\n        },\n        \"phoneNumber\": \"555-987-6543\",\n        \"email\": \"janesmith@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0fb\",\n        \"name\": \"Michael Johnson\",\n        \"address\": {\n            \"street\": \"789 Oak Lane\",\n            \"city\": \"Woodland\",\n            \"state\": \"TX\",\n            \"postalCode\": \"54321\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e578fd\"\n        },\n        \"phoneNumber\": \"555-555-1234\",\n        \"email\": \"michaeljohnson@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0fc\",\n        \"name\": \"Emily Williams\",\n        \"address\": {\n            \"street\": \"101 Pine Street\",\n            \"city\": \"Greenville\",\n            \"state\": \"SC\",\n            \"postalCode\": \"98765\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e578fe\"\n        },\n        \"phoneNumber\": \"555-789-4561\",\n        \"email\": \"emilywilliams@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0fd\",\n        \"name\": \"Daniel Brown\",\n        \"address\": {\n            \"street\": \"555 Maple Avenue\",\n            \"city\": \"Springfield\",\n            \"state\": \"IL\",\n            \"postalCode\": \"24680\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e578ff\"\n        },\n        \"phoneNumber\": \"555-246-1357\",\n        \"email\": \"danielbrown@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0fe\",\n        \"name\": \"Sophia Martinez\",\n        \"address\": {\n            \"street\": \"888 Cherry Lane\",\n            \"city\": \"Fruitville\",\n            \"state\": \"FL\",\n            \"postalCode\": \"97531\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57900\"\n        },\n        \"phoneNumber\": \"555-888-9999\",\n        \"email\": \"sophiamartinez@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af0ff\",\n        \"name\": \"William Davis\",\n        \"address\": {\n            \"street\": \"777 Willow Road\",\n            \"city\": \"Riverdale\",\n            \"state\": \"GA\",\n            \"postalCode\": \"13579\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57901\"\n        },\n        \"phoneNumber\": \"555-777-8888\",\n        \"email\": \"williamdavis@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af100\",\n        \"name\": \"Olivia Johnson\",\n        \"address\": {\n            \"street\": \"222 Cedar Street\",\n            \"city\": \"Countryside\",\n            \"state\": \"IL\",\n            \"postalCode\": \"75309\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57902\"\n        },\n        \"phoneNumber\": \"555-222-3333\",\n        \"email\": \"oliviajohnson@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af101\",\n        \"name\": \"Liam Wilson\",\n        \"address\": {\n            \"street\": \"444 Oak Street\",\n            \"city\": \"Woodville\",\n            \"state\": \"CA\",\n            \"postalCode\": \"56789\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57903\"\n        },\n        \"phoneNumber\": \"555-444-5678\",\n        \"email\": \"liamwilson@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af102\",\n        \"name\": \"Ava Smith\",\n        \"address\": {\n            \"street\": \"333 Maple Lane\",\n            \"city\": \"Mapletown\",\n            \"state\": \"OH\",\n            \"postalCode\": \"24680\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57904\"\n        },\n        \"phoneNumber\": \"555-333-4444\",\n        \"email\": \"avasmith@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af103\",\n        \"name\": \"Noah Lee\",\n        \"address\": {\n            \"street\": \"666 Elm Street\",\n            \"city\": \"Salem\",\n            \"state\": \"MA\",\n            \"postalCode\": \"98765\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57905\"\n        },\n        \"phoneNumber\": \"555-666-7777\",\n        \"email\": \"noahlee@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af104\",\n        \"name\": \"Mia Anderson\",\n        \"address\": {\n            \"street\": \"777 Pine Road\",\n            \"city\": \"Pinesville\",\n            \"state\": \"LA\",\n            \"postalCode\": \"54321\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57906\"\n        },\n        \"phoneNumber\": \"555-777-8888\",\n        \"email\": \"miaanderson@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af105\",\n        \"name\": \"Ethan White\",\n        \"address\": {\n            \"street\": \"555 Oak Lane\",\n            \"city\": \"Oakland\",\n            \"state\": \"CA\",\n            \"postalCode\": \"13579\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57907\"\n        },\n        \"phoneNumber\": \"555-555-6666\",\n        \"email\": \"ethanwhite@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af106\",\n        \"name\": \"Isabella Harris\",\n        \"address\": {\n            \"street\": \"999 Maple Avenue\",\n            \"city\": \"Maplewood\",\n            \"state\": \"NJ\",\n            \"postalCode\": \"97531\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57908\"\n        },\n        \"phoneNumber\": \"555-999-0000\",\n        \"email\": \"isabellaharris@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af107\",\n        \"name\": \"James Miller\",\n        \"address\": {\n            \"street\": \"123 Elm Road\",\n            \"city\": \"Elmsville\",\n            \"state\": \"NV\",\n            \"postalCode\": \"12345\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e57909\"\n        },\n        \"phoneNumber\": \"555-123-2345\",\n        \"email\": \"jamesmiller@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af108\",\n        \"name\": \"Charlotte Taylor\",\n        \"address\": {\n            \"street\": \"456 Pine Avenue\",\n            \"city\": \"Pineville\",\n            \"state\": \"NC\",\n            \"postalCode\": \"67890\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e5790a\"\n        },\n        \"phoneNumber\": \"555-456-5678\",\n        \"email\": \"charlottetaylor@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af109\",\n        \"name\": \"Alexander Moore\",\n        \"address\": {\n            \"street\": \"789 Maple Lane\",\n            \"city\": \"Mapleton\",\n            \"state\": \"UT\",\n            \"postalCode\": \"54321\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e5790b\"\n        },\n        \"phoneNumber\": \"555-789-8901\",\n        \"email\": \"alexandermoore@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af10a\",\n        \"name\": \"Amelia Clark\",\n        \"address\": {\n            \"street\": \"101 Oak Street\",\n            \"city\": \"Oakdale\",\n            \"state\": \"CA\",\n            \"postalCode\": \"98765\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e5790c\"\n        },\n        \"phoneNumber\": \"555-101-1122\",\n        \"email\": \"ameliaclark@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af10b\",\n        \"name\": \"Benjamin Hall\",\n        \"address\": {\n            \"street\": \"555 Elm Avenue\",\n            \"city\": \"Elmvale\",\n            \"state\": \"NY\",\n            \"postalCode\": \"24680\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e5790d\"\n        },\n        \"phoneNumber\": \"555-555-7777\",\n        \"email\": \"benjaminhall@example.com\"\n    },\n    {\n        \"_id\": \"64d61a77d5adbe20e89af10c\",\n        \"name\": \"Evelyn Lewis\",\n        \"address\": {\n            \"street\": \"888 Pine Road\",\n            \"city\": \"Pinewood\",\n            \"state\": \"FL\",\n            \"postalCode\": \"97531\",\n            \"country\": \"USA\",\n            \"_id\": \"64d6cd4c0f8a139790e5790e\"\n        },\n        \"phoneNumber\": \"555-888-9999\",\n        \"email\": \"evelynlewis@example.com\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get customer by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/customers/64d61a77d5adbe20e89af0f9",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"customers",
+										"64d61a77d5adbe20e89af0f9"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/customers/64d61a77d5adbe20e89af106",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"customers",
+												"64d61a77d5adbe20e89af106"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "267"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10b-QsPlUNbRXW/742qDmcWYMWmH4lQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:08:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d61a77d5adbe20e89af106\",\n    \"name\": \"Isabella Harris\",\n    \"address\": {\n        \"street\": \"999 Maple Avenue\",\n        \"city\": \"Maplewood\",\n        \"state\": \"NJ\",\n        \"postalCode\": \"97531\",\n        \"country\": \"USA\",\n        \"_id\": \"64d6cd670f8a139790e57910\"\n    },\n    \"phoneNumber\": \"555-999-0000\",\n    \"email\": \"isabellaharris@example.com\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Swam Htet\",\n    \"address\": {\n        \"street\": \"Shwe Hnin Si Road\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"1322\",\n        \"country\": \"Myanmar\"\n    },\n    \"phoneNumber\": \"555-999-0001\",\n    \"email\": \"swamhtet129@example.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/customers/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Swam Htet\",\n    \"address\": {\n        \"street\": \"Shwe Hnin Si Road\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"1322\",\n        \"country\": \"Myanmar\"\n    },\n    \"phoneNumber\": \"555-999-0001\",\n    \"email\": \"swamhtet129@example.com\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/customers/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"customers",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "271"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10f-Ufi1ksS0ag32G/H+CGJGSkiDhh4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:10:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Swam Htet\",\n    \"address\": {\n        \"street\": \"Shwe Hnin Si Road\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"1322\",\n        \"country\": \"Myanmar\",\n        \"_id\": \"64d6ce0719018ba67bfc2199\"\n    },\n    \"phoneNumber\": \"555-999-0001\",\n    \"email\": \"swamhtet129@example.com\",\n    \"_id\": \"64d6ce0719018ba67bfc2198\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update customer by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Swam Htet\",\n    \"address\": {\n        \"street\": \"Shwe Hnin Si Village\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"1322\",\n        \"country\": \"Myanmar\"\n    },\n    \"phoneNumber\": \"555-999-0001\",\n    \"email\": \"swamhtet129@example.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/customers/64e25dc523ca34ab2d96bc65",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"customers",
+										"64e25dc523ca34ab2d96bc65"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n        \"name\": \"Swam Htet\",\n        \"address\": {\n            \"street\": \"Shwe Hnin Si Road\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"132200\",\n            \"country\": \"Myanmar\"\n        },\n        \"phoneNumber\": \"555-999-0001\",\n        \"email\": \"swamhtet129@example.com\",\n        \"__v\": 0\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/customers/64d6ce0719018ba67bfc2198",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"customers",
+												"64d6ce0719018ba67bfc2198"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "273"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"111-1Se3/4lVjIUtYF7tvhXeSGaVedU\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:12:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d6ce0719018ba67bfc2198\",\n    \"name\": \"Swam Htet\",\n    \"address\": {\n        \"street\": \"Shwe Hnin Si Road\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"132200\",\n        \"country\": \"Myanmar\",\n        \"_id\": \"64d6ce6219018ba67bfc21b0\"\n    },\n    \"phoneNumber\": \"555-999-0001\",\n    \"email\": \"swamhtet129@example.com\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete customer by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/customers/64e25dc523ca34ab2d96bc65",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"customers",
+										"64e25dc523ca34ab2d96bc65"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/customers/64d6ce0719018ba67bfc2198",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"customers",
+												"64d6ce0719018ba67bfc2198"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "273"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"111-1Se3/4lVjIUtYF7tvhXeSGaVedU\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 12 Aug 2023 00:13:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d6ce0719018ba67bfc2198\",\n    \"name\": \"Swam Htet\",\n    \"address\": {\n        \"street\": \"Shwe Hnin Si Road\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"132200\",\n        \"country\": \"Myanmar\",\n        \"_id\": \"64d6ce6219018ba67bfc21b0\"\n    },\n    \"phoneNumber\": \"555-999-0001\",\n    \"email\": \"swamhtet129@example.com\",\n    \"__v\": 0\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "employees",
+					"item": [
+						{
+							"name": "get all employee",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/employees/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"employees",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all employee",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/employees/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"employees",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2593"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a21-thqoM2nMSOVzi/pEFl8R5FwPeBc\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 04:56:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64d9cdbc332bfa360cf1b2c4\",\n        \"firstName\": \"Pyae\",\n        \"lastName\": \"Pyae\",\n        \"NRC\": \"12/5/203300\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64d9cdbc332bfa360cf1b2c5\"\n        },\n        \"phoneNumber\": \"555-111-2222\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af120\",\n            \"name\": \"TechZone\",\n            \"address\": {\n                \"street\": \"789 Innovation Avenue\",\n                \"city\": \"Techville\",\n                \"state\": \"Techland\",\n                \"postalCode\": \"54321\",\n                \"_id\": \"64dc56f8987f7829af830991\"\n            },\n            \"phoneNumber\": \"555-111-2222\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64dc4a4bd9e6964a76db3181\",\n        \"firstName\": \"Soe\",\n        \"lastName\": \"Moe\",\n        \"NRC\": \"5/yabana(n)222301\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64dc4a4bd9e6964a76db3182\"\n        },\n        \"phoneNumber\": \"555-111-2882\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af129\",\n            \"name\": \"OutdoorAdventures\",\n            \"address\": {\n                \"street\": \"789 Nature Trail\",\n                \"city\": \"Explorerville\",\n                \"state\": \"Adventureland\",\n                \"postalCode\": \"62345\",\n                \"_id\": \"64dc56f8987f7829af830992\"\n            },\n            \"phoneNumber\": \"555-000-1111\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64dc550e67fd6164e3cec1d5\",\n        \"firstName\": \"Kyaw\",\n        \"lastName\": \"Kyaw\",\n        \"NRC\": \"NRC123\",\n        \"gender\": \"Male\",\n        \"address\": {\n            \"street\": \"123 Main Street\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"12345\",\n            \"_id\": \"64dc56f8987f7829af83098c\"\n        },\n        \"phoneNumber\": \"555-111-1111\",\n        \"workStartDate\": \"2020-01-01T00:00:00.000Z\",\n        \"birthDate\": \"1991-01-01T00:00:00.000Z\",\n        \"store\": null\n    },\n    {\n        \"_id\": \"64dc550e67fd6164e3cec1d6\",\n        \"firstName\": \"Soe\",\n        \"lastName\": \"Soe\",\n        \"NRC\": \"NRC456\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"456 Elm Avenue\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"67890\",\n            \"_id\": \"64dc56f8987f7829af83098d\"\n        },\n        \"phoneNumber\": \"555-222-2222\",\n        \"workStartDate\": \"2022-02-02T00:00:00.000Z\",\n        \"birthDate\": \"1991-02-02T00:00:00.000Z\",\n        \"store\": null\n    },\n    {\n        \"_id\": \"64dc550e67fd6164e3cec1d7\",\n        \"firstName\": \"Michael\",\n        \"lastName\": \"Johnson\",\n        \"NRC\": \"NRC789\",\n        \"gender\": \"Male\",\n        \"address\": {\n            \"street\": \"789 Pine Lane\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"98765\",\n            \"_id\": \"64dc56f8987f7829af83098e\"\n        },\n        \"phoneNumber\": \"555-333-3333\",\n        \"workStartDate\": \"2020-03-03T00:00:00.000Z\",\n        \"birthDate\": \"1988-10-20T00:00:00.000Z\",\n        \"store\": null\n    },\n    {\n        \"_id\": \"64dc550e67fd6164e3cec1d8\",\n        \"firstName\": \"Emily\",\n        \"lastName\": \"Williams\",\n        \"NRC\": \"NRC012\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"101 Maple Street\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64dc56f8987f7829af83098f\"\n        },\n        \"phoneNumber\": \"555-444-4444\",\n        \"workStartDate\": \"2019-08-16T00:00:00.000Z\",\n        \"birthDate\": \"1993-03-10T00:00:00.000Z\",\n        \"store\": null\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get employee by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/employees/64d9cdbc332bfa360cf1b2c4",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"employees",
+										"64d9cdbc332bfa360cf1b2c4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get employee by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/employees/64d9cdbc332bfa360cf1b2c4",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"employees",
+												"64d9cdbc332bfa360cf1b2c4"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "575"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"23f-kA/r1XX1yxj8ope/cgKP3hwrTPk\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 04:56:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d9cdbc332bfa360cf1b2c4\",\n    \"firstName\": \"Pyae\",\n    \"lastName\": \"Pyae\",\n    \"NRC\": \"12/5/203300\",\n    \"gender\": \"Female\",\n    \"address\": {\n        \"street\": \"Beta Road\",\n        \"city\": \"yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"54321\",\n        \"_id\": \"64d9cdbc332bfa360cf1b2c5\"\n    },\n    \"phoneNumber\": \"555-111-2222\",\n    \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n    \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n    \"store\": {\n        \"_id\": \"64d6c9d4d5adbe20e89af120\",\n        \"name\": \"TechZone\",\n        \"address\": {\n            \"street\": \"789 Innovation Avenue\",\n            \"city\": \"Techville\",\n            \"state\": \"Techland\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64dc570f987f7829af830998\"\n        },\n        \"phoneNumber\": \"555-111-2222\"\n    },\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "get employee by store id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af129/employees",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										"64d6c9d4d5adbe20e89af129",
+										"employees"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get employee by store id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af129/employees",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												"64d6c9d4d5adbe20e89af129",
+												"employees"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1779"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6f3-Inoh8eTpV5hJPPUbXuqNURfb2tw\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 05:16:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64d9cdbc332bfa360cf1b2c4\",\n        \"firstName\": \"Pyae\",\n        \"lastName\": \"Pyae\",\n        \"NRC\": \"12/5/2033333\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"98765\",\n            \"_id\": \"64dc5a42bae1f047998b5bb4\"\n        },\n        \"phoneNumber\": \"555-111-2222\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af129\",\n            \"name\": \"OutdoorAdventures\",\n            \"address\": {\n                \"street\": \"789 Nature Trail\",\n                \"city\": \"Explorerville\",\n                \"state\": \"Adventureland\",\n                \"postalCode\": \"62345\",\n                \"_id\": \"64dc5b977b5b0f4190be4fdc\"\n            },\n            \"phoneNumber\": \"555-000-1111\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64dc4a4bd9e6964a76db3181\",\n        \"firstName\": \"Soe\",\n        \"lastName\": \"Moe\",\n        \"NRC\": \"5/yabana(n)222301\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64dc4a4bd9e6964a76db3182\"\n        },\n        \"phoneNumber\": \"555-111-2882\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af129\",\n            \"name\": \"OutdoorAdventures\",\n            \"address\": {\n                \"street\": \"789 Nature Trail\",\n                \"city\": \"Explorerville\",\n                \"state\": \"Adventureland\",\n                \"postalCode\": \"62345\",\n                \"_id\": \"64dc5b977b5b0f4190be4fdc\"\n            },\n            \"phoneNumber\": \"555-000-1111\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64dc5875fc554665d64a2517\",\n        \"firstName\": \"Khine\",\n        \"lastName\": \"Thiri Nyein\",\n        \"NRC\": \"NRC203040\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"12345\",\n            \"_id\": \"64dc5875fc554665d64a2518\"\n        },\n        \"phoneNumber\": \"555-222-0082\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"2001-02-26T00:00:00.000Z\",\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af129\",\n            \"name\": \"OutdoorAdventures\",\n            \"address\": {\n                \"street\": \"789 Nature Trail\",\n                \"city\": \"Explorerville\",\n                \"state\": \"Adventureland\",\n                \"postalCode\": \"62345\",\n                \"_id\": \"64dc5b977b5b0f4190be4fdc\"\n            },\n            \"phoneNumber\": \"555-000-1111\"\n        },\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get employee by store id and employee id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af129/employees/64d9cdbc332bfa360cf1b2c4",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										"64d6c9d4d5adbe20e89af129",
+										"employees",
+										"64d9cdbc332bfa360cf1b2c4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get employee by store id and employee id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af129/employees/64d9cdbc332bfa360cf1b2c4",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												"64d6c9d4d5adbe20e89af129",
+												"employees",
+												"64d9cdbc332bfa360cf1b2c4"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "386"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"182-UpqhNL/6b0jSH6N5c/xjLuQAWKc\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 05:40:56 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64d9cdbc332bfa360cf1b2c4\",\n        \"firstName\": \"Pyae\",\n        \"lastName\": \"Pyae\",\n        \"NRC\": \"12/5/2033333\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"98765\",\n            \"_id\": \"64dc5a42bae1f047998b5bb4\"\n        },\n        \"phoneNumber\": \"555-111-2222\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": \"64d6c9d4d5adbe20e89af129\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "create employee by store id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"Khine\",\n  \"lastName\": \"Thiri Nyein\",\n  \"NRC\": \"NRC405060\",\n  \"gender\": \"Female\",\n  \"address\": {\n    \"street\": \"Beta Road\",\n    \"city\": \"yangon\",\n    \"state\": \"Yangon\",\n    \"postalCode\": \"12345\"\n  },\n  \"phoneNumber\": \"555-222-0082\",\n  \"workStartDate\": \"2023-01-15\",\n  \"birthDate\": \"2001-02-26\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af129/employees",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stores",
+										"64d6c9d4d5adbe20e89af129",
+										"employees"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create employee by store id",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firstName\": \"Khine\",\n  \"lastName\": \"Thiri Nyein\",\n  \"NRC\": \"NRC203040\",\n  \"gender\": \"Female\",\n  \"address\": {\n    \"street\": \"Beta Road\",\n    \"city\": \"yangon\",\n    \"state\": \"Yangon\",\n    \"postalCode\": \"12345\"\n  },\n  \"phoneNumber\": \"555-222-0082\",\n  \"workStartDate\": \"2023-01-15\",\n  \"birthDate\": \"2001-02-26\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/stores/64d6c9d4d5adbe20e89af129/employees",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stores",
+												"64d6c9d4d5adbe20e89af129",
+												"employees"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "594"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"252-YMFJ4Fluyl7B9norTTpZg3zp8Tw\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 05:02:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"firstName\": \"Khine\",\n    \"lastName\": \"Thiri Nyein\",\n    \"NRC\": \"NRC203040\",\n    \"gender\": \"Female\",\n    \"address\": {\n        \"street\": \"Beta Road\",\n        \"city\": \"yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"12345\",\n        \"_id\": \"64dc5875fc554665d64a2518\"\n    },\n    \"phoneNumber\": \"555-222-0082\",\n    \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n    \"birthDate\": \"2001-02-26T00:00:00.000Z\",\n    \"store\": {\n        \"_id\": \"64d6c9d4d5adbe20e89af129\",\n        \"name\": \"OutdoorAdventures\",\n        \"address\": {\n            \"street\": \"789 Nature Trail\",\n            \"city\": \"Explorerville\",\n            \"state\": \"Adventureland\",\n            \"postalCode\": \"62345\",\n            \"_id\": \"64dc5875fc554665d64a251b\"\n        },\n        \"phoneNumber\": \"555-000-1111\"\n    },\n    \"_id\": \"64dc5875fc554665d64a2517\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update employee by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"Lovely Khine\",\n  \"lastName\": \"Thiri Nyein\",\n  \"NRC\": \"NRC405060\",\n  \"gender\": \"Female\",\n  \"address\": {\n    \"street\": \"Beta Road\",\n    \"city\": \"yangon\",\n    \"state\": \"Yangon\",\n    \"postalCode\": \"12345\"\n  },\n  \"phoneNumber\": \"555-222-0082\",\n  \"workStartDate\": \"2023-01-15\",\n  \"birthDate\": \"2001-02-26\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/employees/64e25ebd47a2c19c67d5ae39",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"employees",
+										"64e25ebd47a2c19c67d5ae39"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update employee by id",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\"firstName\": \"Pyae\",\n\"lastName\": \"Pyae\",\n\"NRC\": \"12/5/2033333\",\n\"gender\": \"Female\",\n\"address\": {\n\"street\": \"Beta Road\",\n\"city\": \"yangon\",\n\"state\": \"Yangon\",\n\"postalCode\": \"98765\"\n},\n\"phoneNumber\": \"555-111-2222\",\n\"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n\"birthDate\": \"1990-05-10T00:00:00.000Z\",\n\"store\": \"64d6c9d4d5adbe20e89af129\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/employees/64d9cdbc332bfa360cf1b2c4",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"employees",
+												"64d9cdbc332bfa360cf1b2c4"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "589"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"24d-uj4nMS5G+uh2NzvhTYm34oZG9Nw\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 05:10:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64d9cdbc332bfa360cf1b2c4\",\n    \"firstName\": \"Pyae\",\n    \"lastName\": \"Pyae\",\n    \"NRC\": \"12/5/2033333\",\n    \"gender\": \"Female\",\n    \"address\": {\n        \"street\": \"Beta Road\",\n        \"city\": \"yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"98765\",\n        \"_id\": \"64dc5a42bae1f047998b5bb4\"\n    },\n    \"phoneNumber\": \"555-111-2222\",\n    \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n    \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n    \"store\": {\n        \"_id\": \"64d6c9d4d5adbe20e89af129\",\n        \"name\": \"OutdoorAdventures\",\n        \"address\": {\n            \"street\": \"789 Nature Trail\",\n            \"city\": \"Explorerville\",\n            \"state\": \"Adventureland\",\n            \"postalCode\": \"62345\",\n            \"_id\": \"64dc5a42bae1f047998b5bb7\"\n        },\n        \"phoneNumber\": \"555-000-1111\"\n    },\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete employee by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/employees/64e25ebd47a2c19c67d5ae39",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"employees",
+										"64e25ebd47a2c19c67d5ae39"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete employee by id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/employees/64dc550e67fd6164e3cec1d8",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"employees",
+												"64dc550e67fd6164e3cec1d8"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "580"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"244-PQBa7z63puN1TN/EkYAGE2La6n8\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 05:12:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dc550e67fd6164e3cec1d8\",\n    \"firstName\": \"Emily\",\n    \"lastName\": \"Williams\",\n    \"NRC\": \"NRC012\",\n    \"gender\": \"Female\",\n    \"address\": {\n        \"street\": \"101 Maple Street\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"54321\",\n        \"_id\": \"64dc5ac07b5b0f4190be4fb6\"\n    },\n    \"phoneNumber\": \"555-444-4444\",\n    \"workStartDate\": \"2019-08-16T00:00:00.000Z\",\n    \"birthDate\": \"1993-03-10T00:00:00.000Z\",\n    \"store\": {\n        \"_id\": \"64d6c9d4d5adbe20e89af123\",\n        \"name\": \"SportsSupreme\",\n        \"address\": {\n            \"street\": \"789 Athletic Drive\",\n            \"city\": \"Sportstown\",\n            \"state\": \"Fitnessland\",\n            \"postalCode\": \"13579\",\n            \"_id\": \"64dc5ac07b5b0f4190be4fb8\"\n        },\n        \"phoneNumber\": \"555-444-5555\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "manufacturers",
+					"item": [
+						{
+							"name": "get all manufacturer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/manufacturers/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"manufacturers",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all manufacturer",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/manufacturers/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"manufacturers",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1472"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5c0-qsdSR/YB7hf8CAgA9yuBYp924XA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 08:01:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64dc817967fd6164e3cec208\",\n        \"name\": \"ABC Manufacturing\",\n        \"address\": {\n            \"street\": \"123 Manufacturing Street\",\n            \"city\": \"Factorytown\",\n            \"state\": \"Productionville\",\n            \"postalCode\": \"12345\",\n            \"country\": \"Countryland\",\n            \"_id\": \"64dc825058f9149b2271311d\"\n        },\n        \"phoneNumber\": \"555-111-1111\",\n        \"email\": \"info@abcmanufacturing.com\"\n    },\n    {\n        \"_id\": \"64dc817967fd6164e3cec209\",\n        \"name\": \"XYZ Tech Industries\",\n        \"address\": {\n            \"street\": \"456 Tech Avenue\",\n            \"city\": \"Techville\",\n            \"state\": \"Techland\",\n            \"postalCode\": \"54321\",\n            \"country\": \"Techlandia\",\n            \"_id\": \"64dc825058f9149b2271311e\"\n        },\n        \"phoneNumber\": \"555-222-2222\",\n        \"email\": \"contact@xyztech.com\"\n    },\n    {\n        \"_id\": \"64dc817967fd6164e3cec20a\",\n        \"name\": \"Quality Products Ltd.\",\n        \"address\": {\n            \"street\": \"789 Quality Road\",\n            \"city\": \"Excellenceville\",\n            \"state\": \"Qualityland\",\n            \"postalCode\": \"98765\",\n            \"country\": \"Perfectionland\",\n            \"_id\": \"64dc825058f9149b2271311f\"\n        },\n        \"phoneNumber\": \"555-333-3333\",\n        \"email\": \"sales@qualityproducts.com\"\n    },\n    {\n        \"_id\": \"64dc817967fd6164e3cec20b\",\n        \"name\": \"Fashionable Creations Inc.\",\n        \"address\": {\n            \"street\": \"101 Fashion Street\",\n            \"city\": \"Styleville\",\n            \"state\": \"Fashionland\",\n            \"postalCode\": \"56789\",\n            \"country\": \"Trendtopia\",\n            \"_id\": \"64dc825058f9149b22713120\"\n        },\n        \"phoneNumber\": \"555-444-4444\",\n        \"email\": \"info@fashionablecreations.com\"\n    },\n    {\n        \"_id\": \"64dc817967fd6164e3cec20c\",\n        \"name\": \"Green Innovations Ltd.\",\n        \"address\": {\n            \"street\": \"123 Eco Lane\",\n            \"city\": \"Greenville\",\n            \"state\": \"Ecoland\",\n            \"postalCode\": \"13579\",\n            \"country\": \"Sustainabilityland\",\n            \"_id\": \"64dc825058f9149b22713121\"\n        },\n        \"phoneNumber\": \"555-555-5555\",\n        \"email\": \"contact@greeninnovations.com\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get manufacturer by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/manufacturers/64dc817967fd6164e3cec208",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"manufacturers",
+										"64dc817967fd6164e3cec208"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get manufacturer by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/manufacturers/64dc817967fd6164e3cec208",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"manufacturers",
+												"64dc817967fd6164e3cec208"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "299"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12b-nBXmWr8nMJvUHji/CwIGJCtq2qk\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 08:01:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dc817967fd6164e3cec208\",\n    \"name\": \"ABC Manufacturing\",\n    \"address\": {\n        \"street\": \"123 Manufacturing Street\",\n        \"city\": \"Factorytown\",\n        \"state\": \"Productionville\",\n        \"postalCode\": \"12345\",\n        \"country\": \"Countryland\",\n        \"_id\": \"64dc826f58f9149b2271312b\"\n    },\n    \"phoneNumber\": \"555-111-1111\",\n    \"email\": \"info@abcmanufacturing.com\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create manufacturer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Yellow Innovations Ltd.\",\n        \"address\": {\n            \"street\": \"123 Eco Lane\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"203040\",\n            \"country\": \"Myanmar\"\n        },\n        \"phoneNumber\": \"555-555-6666\",\n        \"email\": \"contact@orangeLimited.com\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/manufacturers/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"manufacturers",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create manufacturer",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n        \"name\": \"Orange Innovations Ltd.\",\n        \"address\": {\n            \"street\": \"123 Eco Lane\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"203040\",\n            \"country\": \"Myanmar\"\n        },\n        \"phoneNumber\": \"555-555-6666\",\n        \"email\": \"contact@orangeLimited.com\"\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/manufacturers/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"manufacturers",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "284"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11c-9nZtVNv25EHRD2ePP9D65HLJ2Ro\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 08:04:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Orange Innovations Ltd.\",\n    \"address\": {\n        \"street\": \"123 Eco Lane\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"203040\",\n        \"country\": \"Myanmar\",\n        \"_id\": \"64dc832458f9149b22713133\"\n    },\n    \"phoneNumber\": \"555-555-6666\",\n    \"email\": \"contact@orangeLimited.com\",\n    \"_id\": \"64dc832458f9149b22713132\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update manufacturer by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Y3llo Innovations Ltd.\",\n        \"address\": {\n            \"street\": \"123 Eco Lane\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"203040600\",\n            \"country\": \"Myanmar\",\n            \"_id\": \"64dc832458f9149b22713133\"\n        },\n        \"phoneNumber\": \"555-555-6666\",\n        \"email\": \"contact@orangeLimited.com\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/manufacturers/64e25f976c35bf990d8732d6",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"manufacturers",
+										"64e25f976c35bf990d8732d6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update manufacturer",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n        \"name\": \"Orange Innovations Ltd.\",\n        \"address\": {\n            \"street\": \"123 Eco Lane\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"203040600\",\n            \"country\": \"Myanmar\",\n            \"_id\": \"64dc832458f9149b22713133\"\n        },\n        \"phoneNumber\": \"555-555-6666\",\n        \"email\": \"contact@orangeLimited.com\"\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/manufacturers/64dc832458f9149b22713132",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"manufacturers",
+												"64dc832458f9149b22713132"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "287"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11f-U8BDMo8osauoD8IbXPZDY1daArA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 08:07:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dc832458f9149b22713132\",\n    \"name\": \"Orange Innovations Ltd.\",\n    \"address\": {\n        \"street\": \"123 Eco Lane\",\n        \"city\": \"Yangon\",\n        \"state\": \"Yangon\",\n        \"postalCode\": \"203040600\",\n        \"country\": \"Myanmar\",\n        \"_id\": \"64dc832458f9149b22713133\"\n    },\n    \"phoneNumber\": \"555-555-6666\",\n    \"email\": \"contact@orangeLimited.com\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete manufacturer by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/manufacturers/64e25f976c35bf990d8732d6",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"manufacturers",
+										"64e25f976c35bf990d8732d6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete manufacture by id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/manufacturers/64dc817967fd6164e3cec20b",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"manufacturers",
+												"64dc817967fd6164e3cec20b"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "300"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12c-OzLepNAMGNWrs87yg8Guab18Uuo\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 08:08:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dc817967fd6164e3cec20b\",\n    \"name\": \"Fashionable Creations Inc.\",\n    \"address\": {\n        \"street\": \"101 Fashion Street\",\n        \"city\": \"Styleville\",\n        \"state\": \"Fashionland\",\n        \"postalCode\": \"56789\",\n        \"country\": \"Trendtopia\",\n        \"_id\": \"64dc83ee58f9149b2271314c\"\n    },\n    \"phoneNumber\": \"555-444-4444\",\n    \"email\": \"info@fashionablecreations.com\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "products",
+					"item": [
+						{
+							"name": "get all products",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/products/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all products",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/products/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"products",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "913"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"391-8Eb15rt27se6iVlaMTiEr6F1xz4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 10:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n        \"name\": \"Product One\",\n        \"price\": 200.3,\n        \"category\": {\n            \"_id\": \"64d64ab6d5adbe20e89af113\",\n            \"name\": \"Electronics\"\n        },\n        \"manufacturer\": {\n            \"_id\": \"64dc817967fd6164e3cec20a\",\n            \"name\": \"Quality Products Ltd.\",\n            \"address\": {\n                \"street\": \"789 Quality Road\",\n                \"city\": \"Excellenceville\",\n                \"state\": \"Qualityland\",\n                \"postalCode\": \"98765\",\n                \"country\": \"Perfectionland\",\n                \"_id\": \"64dca4fceb117cde6581950d\"\n            },\n            \"phoneNumber\": \"555-333-3333\",\n            \"email\": \"sales@qualityproducts.com\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64dca4dceb117cde65819502\",\n        \"name\": \"Product Two\",\n        \"price\": 20020.3,\n        \"category\": {\n            \"_id\": \"64d64ab6d5adbe20e89af119\",\n            \"name\": \"Toys and Games\"\n        },\n        \"manufacturer\": {\n            \"_id\": \"64dc832458f9149b22713132\",\n            \"name\": \"Orange Innovations Ltd.\",\n            \"address\": {\n                \"street\": \"123 Eco Lane\",\n                \"city\": \"Yangon\",\n                \"state\": \"Yangon\",\n                \"postalCode\": \"203040600\",\n                \"country\": \"Myanmar\",\n                \"_id\": \"64dc832458f9149b22713133\"\n            },\n            \"phoneNumber\": \"555-555-6666\",\n            \"email\": \"contact@orangeLimited.com\",\n            \"__v\": 0\n        },\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get product by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/products/64dd8946fb23f23631b4a128",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"64dd8946fb23f23631b4a128"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get product by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/products/64dc91ee9d42e4b6df741d2b",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"products",
+												"64dc91ee9d42e4b6df741d2b"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "458"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ca-kAe4tGfa7MjHwl13ClmXetzXGqs\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 09:10:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n    \"name\": \"Product One\",\n    \"price\": 200.3,\n    \"category\": {\n        \"_id\": \"64d64ab6d5adbe20e89af113\",\n        \"name\": \"Electronics\"\n    },\n    \"manufacturer\": {\n        \"_id\": \"64dc817967fd6164e3cec20a\",\n        \"name\": \"Quality Products Ltd.\",\n        \"address\": {\n            \"street\": \"789 Quality Road\",\n            \"city\": \"Excellenceville\",\n            \"state\": \"Qualityland\",\n            \"postalCode\": \"98765\",\n            \"country\": \"Perfectionland\",\n            \"_id\": \"64dc92856e1d2b8aaf86d2dd\"\n        },\n        \"phoneNumber\": \"555-333-3333\",\n        \"email\": \"sales@qualityproducts.com\"\n    },\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "create product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Product four\",\n    \"price\":250.40,\n    \"category_id\":\"64d64ab6d5adbe20e89af116\",\n    \"manufacturer_id\":\"64dc817967fd6164e3cec20c\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/products/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create product",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"Product One\",\n    \"price\":200.3,\n    \"category_id\":\"64d64ab6d5adbe20e89af113\",\n    \"manufacturer_id\":\"64dc817967fd6164e3cec20a\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/products/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"products",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "458"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ca-8To6JIoFuiMel+MZJDHnwo6fs7M\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 09:07:58 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Product One\",\n    \"price\": 200.3,\n    \"category\": {\n        \"_id\": \"64d64ab6d5adbe20e89af113\",\n        \"name\": \"Electronics\"\n    },\n    \"manufacturer\": {\n        \"_id\": \"64dc817967fd6164e3cec20a\",\n        \"name\": \"Quality Products Ltd.\",\n        \"address\": {\n            \"street\": \"789 Quality Road\",\n            \"city\": \"Excellenceville\",\n            \"state\": \"Qualityland\",\n            \"postalCode\": \"98765\",\n            \"country\": \"Perfectionland\",\n            \"_id\": \"64dc91ee9d42e4b6df741d2f\"\n        },\n        \"phoneNumber\": \"555-333-3333\",\n        \"email\": \"sales@qualityproducts.com\"\n    },\n    \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update product by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Product four\",\n    \"price\":2500.40,\n    \"category_id\":\"64d64ab6d5adbe20e89af116\",\n    \"manufacturer_id\":\"64dc817967fd6164e3cec20c\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/products/64dd8946fb23f23631b4a128",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"64dd8946fb23f23631b4a128"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update product by id",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Product One\",\n    \"price\": 10900.3,\n    \"category\": {\n        \"_id\": \"64d64ab6d5adbe20e89af113\",\n        \"name\": \"Electronics\"\n    },\n    \"manufacturer\": {\n        \"_id\": \"64dc817967fd6164e3cec20a\",\n        \"name\": \"Quality Products Ltd.\",\n        \"address\": {\n            \"street\": \"789 Quality Road\",\n            \"city\": \"Excellenceville\",\n            \"state\": \"Qualityland\",\n            \"postalCode\": \"98765\",\n            \"country\": \"Perfectionland\",\n            \"_id\": \"64dc92856e1d2b8aaf86d2dd\"\n        },\n        \"phoneNumber\": \"555-333-3333\",\n        \"email\": \"sales@qualityproducts.com\"\n    },\n    \"__v\": 0\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/products/64dc91ee9d42e4b6df741d2b",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"products",
+												"64dc91ee9d42e4b6df741d2b"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "460"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1cc-Vzoum9Y6/Tp+2BYED2xznu015us\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 10:31:56 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n    \"name\": \"Product One\",\n    \"price\": 10900.3,\n    \"category\": {\n        \"_id\": \"64d64ab6d5adbe20e89af113\",\n        \"name\": \"Electronics\"\n    },\n    \"manufacturer\": {\n        \"_id\": \"64dc817967fd6164e3cec20a\",\n        \"name\": \"Quality Products Ltd.\",\n        \"address\": {\n            \"street\": \"789 Quality Road\",\n            \"city\": \"Excellenceville\",\n            \"state\": \"Qualityland\",\n            \"postalCode\": \"98765\",\n            \"country\": \"Perfectionland\",\n            \"_id\": \"64dca59caaec5903645e815e\"\n        },\n        \"phoneNumber\": \"555-333-3333\",\n        \"email\": \"sales@qualityproducts.com\"\n    },\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete product by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/products/64dd8946fb23f23631b4a128",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"64dd8946fb23f23631b4a128"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete product by id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/products/64dca4dceb117cde65819502",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"products",
+												"64dca4dceb117cde65819502"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "452"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c4-YuoD7DI6+zCmjZeRmPumjkS4lsE\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 10:33:30 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dca4dceb117cde65819502\",\n    \"name\": \"Product Two\",\n    \"price\": 20020.3,\n    \"category\": {\n        \"_id\": \"64d64ab6d5adbe20e89af119\",\n        \"name\": \"Toys and Games\"\n    },\n    \"manufacturer\": {\n        \"_id\": \"64dc832458f9149b22713132\",\n        \"name\": \"Orange Innovations Ltd.\",\n        \"address\": {\n            \"street\": \"123 Eco Lane\",\n            \"city\": \"Yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"203040600\",\n            \"country\": \"Myanmar\",\n            \"_id\": \"64dc832458f9149b22713133\"\n        },\n        \"phoneNumber\": \"555-555-6666\",\n        \"email\": \"contact@orangeLimited.com\",\n        \"__v\": 0\n    },\n    \"__v\": 0\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "stocks",
+					"item": [
+						{
+							"name": "get all stock",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stocks/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stocks",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all stock",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stocks/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stocks",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1229"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4cd-lqKlVjES3bwx9TMdkPDiK1oAqoA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 12:04:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64dcb79a66108a815724f8db\",\n        \"quantity\": 2000,\n        \"product\": {\n            \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n            \"name\": \"Product One\",\n            \"price\": 10900.3,\n            \"category\": {\n                \"_id\": \"64d64ab6d5adbe20e89af113\",\n                \"name\": \"Electronics\"\n            },\n            \"manufacturer\": {\n                \"_id\": \"64dc817967fd6164e3cec20a\",\n                \"name\": \"Quality Products Ltd.\",\n                \"address\": {\n                    \"street\": \"789 Quality Road\",\n                    \"city\": \"Excellenceville\",\n                    \"state\": \"Qualityland\",\n                    \"postalCode\": \"98765\",\n                    \"country\": \"Perfectionland\",\n                    \"_id\": \"64dcbb6b0ef84120f9a85a45\"\n                },\n                \"phoneNumber\": \"555-333-3333\",\n                \"email\": \"sales@qualityproducts.com\"\n            },\n            \"__v\": 0\n        },\n        \"manufacture_date\": \"2023-01-30T00:00:00.000Z\",\n        \"exp_date\": \"2024-01-30T00:00:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64dcbb530ef84120f9a85a3b\",\n        \"quantity\": 1200,\n        \"product\": {\n            \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n            \"name\": \"Product One\",\n            \"price\": 10900.3,\n            \"category\": {\n                \"_id\": \"64d64ab6d5adbe20e89af113\",\n                \"name\": \"Electronics\"\n            },\n            \"manufacturer\": {\n                \"_id\": \"64dc817967fd6164e3cec20a\",\n                \"name\": \"Quality Products Ltd.\",\n                \"address\": {\n                    \"street\": \"789 Quality Road\",\n                    \"city\": \"Excellenceville\",\n                    \"state\": \"Qualityland\",\n                    \"postalCode\": \"98765\",\n                    \"country\": \"Perfectionland\",\n                    \"_id\": \"64dcbb6b0ef84120f9a85a45\"\n                },\n                \"phoneNumber\": \"555-333-3333\",\n                \"email\": \"sales@qualityproducts.com\"\n            },\n            \"__v\": 0\n        },\n        \"manufacture_date\": \"2023-03-30T00:00:00.000Z\",\n        \"exp_date\": \"2024-03-30T00:00:00.000Z\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get stock by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stocks/64ddb148bd6fc66c57f0371e",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stocks",
+										"64ddb148bd6fc66c57f0371e"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get stock by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stocks/64dcb79a66108a815724f8db",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stocks",
+												"64dcb79a66108a815724f8db"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "613"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"265-vwiVXY7y0kVuXG44xuZavc8UAlw\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 12:02:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dcb79a66108a815724f8db\",\n    \"quantity\": 2000,\n    \"product\": {\n        \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n        \"name\": \"Product One\",\n        \"price\": 10900.3,\n        \"category\": {\n            \"_id\": \"64d64ab6d5adbe20e89af113\",\n            \"name\": \"Electronics\"\n        },\n        \"manufacturer\": {\n            \"_id\": \"64dc817967fd6164e3cec20a\",\n            \"name\": \"Quality Products Ltd.\",\n            \"address\": {\n                \"street\": \"789 Quality Road\",\n                \"city\": \"Excellenceville\",\n                \"state\": \"Qualityland\",\n                \"postalCode\": \"98765\",\n                \"country\": \"Perfectionland\",\n                \"_id\": \"64dcbae80ef84120f9a85a31\"\n            },\n            \"phoneNumber\": \"555-333-3333\",\n            \"email\": \"sales@qualityproducts.com\"\n        },\n        \"__v\": 0\n    },\n    \"manufacture_date\": \"2023-01-30T00:00:00.000Z\",\n    \"exp_date\": \"2024-01-30T00:00:00.000Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "get stock by product id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var template = `",
+											"<style type=\"text/css\">",
+											"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+											"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+											"    .tftable tr {background-color:#ffffff;}",
+											"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+											"    .tftable tr:hover {background-color:#e0ffff;}",
+											"</style>",
+											"",
+											"<table class=\"tftable\" border=\"1\">",
+											"    <tr>",
+											"        <th>Product Name</th>",
+											"        <th>Quantity</th>",
+											"        <th>Manufacturer</th>",
+											"        <th>Manufacture Date</th>",
+											"        <th>Expiration Date</th>",
+											"    </tr>",
+											"    ",
+											"    {{#each response}}",
+											"        <tr>",
+											"            <td>{{product.name}}</td>",
+											"            <td>{{quantity}}</td>",
+											"            <td>{{product.manufacturer.name}}</td>",
+											"            <td>{{manufacture_date}}</td>",
+											"            <td>{{exp_date}}</td>",
+											"        </tr>",
+											"    {{/each}}",
+											"</table>",
+											"`;",
+											"",
+											"function constructVisualizerPayload() {",
+											"    return { response: pm.response.json() };",
+											"}",
+											"",
+											"pm.visualizer.set(template, constructVisualizerPayload());",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stocks/product/64dc91ee9d42e4b6df741d2b",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stocks",
+										"product",
+										"64dc91ee9d42e4b6df741d2b"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get stock by product id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stocks/product/64dc91ee9d42e4b6df741d2b",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stocks",
+												"product",
+												"64dc91ee9d42e4b6df741d2b"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1229"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4cd-TUKAe84nnrF2u2reaPxmGoP2+Wk\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 06:00:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64ddb148bd6fc66c57f0371e\",\n        \"quantity\": 2000,\n        \"product\": {\n            \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n            \"name\": \"Product One\",\n            \"price\": 10900.3,\n            \"category\": {\n                \"_id\": \"64d64ab6d5adbe20e89af113\",\n                \"name\": \"Electronics\"\n            },\n            \"manufacturer\": {\n                \"_id\": \"64dc817967fd6164e3cec20a\",\n                \"name\": \"Quality Products Ltd.\",\n                \"address\": {\n                    \"street\": \"789 Quality Road\",\n                    \"city\": \"Excellenceville\",\n                    \"state\": \"Qualityland\",\n                    \"postalCode\": \"98765\",\n                    \"country\": \"Perfectionland\",\n                    \"_id\": \"64ddb7880d2627a153b0db8a\"\n                },\n                \"phoneNumber\": \"555-333-3333\",\n                \"email\": \"sales@qualityproducts.com\"\n            },\n            \"__v\": 0\n        },\n        \"manufacture_date\": \"2022-03-30T00:00:00.000Z\",\n        \"exp_date\": \"2024-03-30T00:00:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64ddb151bd6fc66c57f03724\",\n        \"quantity\": 2100,\n        \"product\": {\n            \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n            \"name\": \"Product One\",\n            \"price\": 10900.3,\n            \"category\": {\n                \"_id\": \"64d64ab6d5adbe20e89af113\",\n                \"name\": \"Electronics\"\n            },\n            \"manufacturer\": {\n                \"_id\": \"64dc817967fd6164e3cec20a\",\n                \"name\": \"Quality Products Ltd.\",\n                \"address\": {\n                    \"street\": \"789 Quality Road\",\n                    \"city\": \"Excellenceville\",\n                    \"state\": \"Qualityland\",\n                    \"postalCode\": \"98765\",\n                    \"country\": \"Perfectionland\",\n                    \"_id\": \"64ddb7880d2627a153b0db8a\"\n                },\n                \"phoneNumber\": \"555-333-3333\",\n                \"email\": \"sales@qualityproducts.com\"\n            },\n            \"__v\": 0\n        },\n        \"manufacture_date\": \"2023-03-30T00:00:00.000Z\",\n        \"exp_date\": \"2024-03-30T00:00:00.000Z\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "create stock",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\":130,\n    \"product_id\":\"64dd8946fb23f23631b4a128\",\n    \"manufacture_date\":\"2023-01-30\",\n    \"exp_date\":\"2023-06-20\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/stocks/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stocks",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create stock",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"quantity\":1200,\n    \"product_id\":\"64dc91ee9d42e4b6df741d2b\",\n    \"manufacture_date\":\"2023-03-30\",\n    \"exp_date\":\"2024-03-30\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/stocks/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stocks",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "613"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"265-S5AW0TGYwS55DJAOfyh4VXO2N30\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 12:04:35 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"quantity\": 1200,\n    \"product\": {\n        \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n        \"name\": \"Product One\",\n        \"price\": 10900.3,\n        \"category\": {\n            \"_id\": \"64d64ab6d5adbe20e89af113\",\n            \"name\": \"Electronics\"\n        },\n        \"manufacturer\": {\n            \"_id\": \"64dc817967fd6164e3cec20a\",\n            \"name\": \"Quality Products Ltd.\",\n            \"address\": {\n                \"street\": \"789 Quality Road\",\n                \"city\": \"Excellenceville\",\n                \"state\": \"Qualityland\",\n                \"postalCode\": \"98765\",\n                \"country\": \"Perfectionland\",\n                \"_id\": \"64dcbb530ef84120f9a85a40\"\n            },\n            \"phoneNumber\": \"555-333-3333\",\n            \"email\": \"sales@qualityproducts.com\"\n        },\n        \"__v\": 0\n    },\n    \"manufacture_date\": \"2023-03-30T00:00:00.000Z\",\n    \"exp_date\": \"2024-03-30T00:00:00.000Z\",\n    \"_id\": \"64dcbb530ef84120f9a85a3b\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update stock by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\":130,\n    \"product_id\":\"64dc91ee9d42e4b6df741d2b\",\n    \"manufacture_date\":\"2023-01-30\",\n    \"exp_date\":\"2023-06-20\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/stocks/64ddb148bd6fc66c57f0371e",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stocks",
+										"64ddb148bd6fc66c57f0371e"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update stock by id",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n        \"quantity\": 2020,\n        \"product\": {\n            \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n            \"name\": \"Product One\",\n            \"price\": 10900.3,\n            \"category\": {\n                \"_id\": \"64d64ab6d5adbe20e89af113\",\n                \"name\": \"Electronics\"\n            },\n            \"manufacturer\": {\n                \"_id\": \"64dc817967fd6164e3cec20a\",\n                \"name\": \"Quality Products Ltd.\",\n                \"address\": {\n                    \"street\": \"789 Quality Road\",\n                    \"city\": \"Excellenceville\",\n                    \"state\": \"Qualityland\",\n                    \"postalCode\": \"98765\",\n                    \"country\": \"Perfectionland\",\n                    \"_id\": \"64dcbb6b0ef84120f9a85a45\"\n                },\n                \"phoneNumber\": \"555-333-3333\",\n                \"email\": \"sales@qualityproducts.com\"\n            },\n            \"__v\": 0\n        },\n        \"manufacture_date\": \"2023-01-30T00:00:00.000Z\",\n        \"exp_date\": \"2024-01-30T00:00:00.000Z\",\n        \"__v\": 0\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/stocks/64dcb79a66108a815724f8db",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stocks",
+												"64dcb79a66108a815724f8db"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "613"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"265-JgtU7v3+HLFLIb04JWRZt/tBm48\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 12:07:42 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dcb79a66108a815724f8db\",\n    \"quantity\": 2020,\n    \"product\": {\n        \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n        \"name\": \"Product One\",\n        \"price\": 10900.3,\n        \"category\": {\n            \"_id\": \"64d64ab6d5adbe20e89af113\",\n            \"name\": \"Electronics\"\n        },\n        \"manufacturer\": {\n            \"_id\": \"64dc817967fd6164e3cec20a\",\n            \"name\": \"Quality Products Ltd.\",\n            \"address\": {\n                \"street\": \"789 Quality Road\",\n                \"city\": \"Excellenceville\",\n                \"state\": \"Qualityland\",\n                \"postalCode\": \"98765\",\n                \"country\": \"Perfectionland\",\n                \"_id\": \"64dcbc0e0ef84120f9a85a58\"\n            },\n            \"phoneNumber\": \"555-333-3333\",\n            \"email\": \"sales@qualityproducts.com\"\n        },\n        \"__v\": 0\n    },\n    \"manufacture_date\": \"2023-01-30T00:00:00.000Z\",\n    \"exp_date\": \"2024-01-30T00:00:00.000Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete stock by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/stocks/64ddb148bd6fc66c57f0371e",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"stocks",
+										"64ddb148bd6fc66c57f0371e"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete stock by id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/stocks/64dcb79a66108a815724f8db",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"stocks",
+												"64dcb79a66108a815724f8db"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "613"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"265-iMkIxFmEWZowiE1qJxKqwtthTPE\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 12:08:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dcb79a66108a815724f8db\",\n    \"quantity\": 2020,\n    \"product\": {\n        \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n        \"name\": \"Product One\",\n        \"price\": 10900.3,\n        \"category\": {\n            \"_id\": \"64d64ab6d5adbe20e89af113\",\n            \"name\": \"Electronics\"\n        },\n        \"manufacturer\": {\n            \"_id\": \"64dc817967fd6164e3cec20a\",\n            \"name\": \"Quality Products Ltd.\",\n            \"address\": {\n                \"street\": \"789 Quality Road\",\n                \"city\": \"Excellenceville\",\n                \"state\": \"Qualityland\",\n                \"postalCode\": \"98765\",\n                \"country\": \"Perfectionland\",\n                \"_id\": \"64dcbc2b0ef84120f9a85a5d\"\n            },\n            \"phoneNumber\": \"555-333-3333\",\n            \"email\": \"sales@qualityproducts.com\"\n        },\n        \"__v\": 0\n    },\n    \"manufacture_date\": \"2023-01-30T00:00:00.000Z\",\n    \"exp_date\": \"2024-01-30T00:00:00.000Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "get all users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/users/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all users",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/users/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"users",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "287"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11f-+5Q9A5VNAxYCpopsOqlecBXH3N0\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 19:36:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64dd2510a1a2552b06dee456\",\n        \"firstName\": \"Swam\",\n        \"lastName\": \"Htet\",\n        \"userName\": \"alphar\",\n        \"email\": \"swamhtet129@gmail.com\",\n        \"password\": \"$2b$10$x5MAJxswdScMgfkEzLASxuK0ROEr4sRo.Zs/D9ew5hlBpQIm5hdQ2\",\n        \"dateOfBirth\": \"2023-08-16T19:35:44.000Z\",\n        \"createdAt\": \"2023-08-16T19:35:44.000Z\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get user by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{own}}/api/users/64dd2510a1a2552b06dee456",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"64dd2510a1a2552b06dee456"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get user by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/users/64dd2510a1a2552b06dee456",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"users",
+												"64dd2510a1a2552b06dee456"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "285"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11d-Y6D/rDIajBnqcJX20kIbHyqfK9M\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 19:37:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dd2510a1a2552b06dee456\",\n    \"firstName\": \"Swam\",\n    \"lastName\": \"Htet\",\n    \"userName\": \"alphar\",\n    \"email\": \"swamhtet129@gmail.com\",\n    \"password\": \"$2b$10$x5MAJxswdScMgfkEzLASxuK0ROEr4sRo.Zs/D9ew5hlBpQIm5hdQ2\",\n    \"dateOfBirth\": \"2023-08-16T19:35:44.000Z\",\n    \"createdAt\": \"2023-08-16T19:35:44.000Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "user login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userName\":\"alphar\",\n    \"password\":\"rocket132212\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/users/login/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"login",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "user login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"userName\":\"alphar\",\n    \"password\":\"rocket132212\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/users/login/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"users",
+												"login",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "160"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a0-0FAqqfTqMcgkvA2ORos8EOK3XXk\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 04:31:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQ5ZmM4MWZjZmZmMzU1NWY2NjIyNSIsImlhdCI6MTY5MjI0NjY4NH0.iyXnIr3Aiur46Yao6LiZSF04YXb2YYB1TdYjZJP9Zqc\"\n}"
+								}
+							]
+						},
+						{
+							"name": "user register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Swam\",\n    \"lastName\":\"Htet\",\n    \"userName\":\"alphar\",\n    \"email\":\"swam129@gmail.com\",\n    \"password\":\"rocket132212\",\n    \"dateOfBirth\":\"2002-01-29\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/users/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "user register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"firstName\":\"Khine\",\n    \"lastName\":\"Thiri Nyein\",\n    \"userName\":\"tessa\",\n    \"email\":\"khinenyein010226@gmail.com\",\n    \"password\":\"rocket132212\",\n    \"dateOfBirth\":\"26-02-2001\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/users/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"users",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "160"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a0-pBy/x0D6gzdX1+z7cBMOtloqyWE\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 16 Aug 2023 19:35:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "sales",
+					"item": [
+						{
+							"name": "get all sale",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{own}}/api/sales/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"sales",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get all sale",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/sales/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"sales",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1489"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5d1-cbfz9f1HfouRVkedjUMSVGiHGDk\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 03:23:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64dd8ee91e90cc31ac7670b6\",\n        \"products\": [\n            {\n                \"product\": {\n                    \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n                    \"name\": \"Product One\",\n                    \"price\": 10900.3,\n                    \"category\": \"64d64ab6d5adbe20e89af113\",\n                    \"manufacturer\": \"64dc817967fd6164e3cec20a\",\n                    \"__v\": 0\n                },\n                \"quantity\": 20,\n                \"price\": 10900.3,\n                \"_id\": \"64dd8ee91e90cc31ac7670b7\"\n            },\n            {\n                \"product\": {\n                    \"_id\": \"64dd8946fb23f23631b4a128\",\n                    \"name\": \"Product Two\",\n                    \"price\": 1200.3,\n                    \"category\": \"64d64ab6d5adbe20e89af115\",\n                    \"manufacturer\": \"64dc817967fd6164e3cec20c\",\n                    \"__v\": 0\n                },\n                \"quantity\": 32,\n                \"price\": 1200.3,\n                \"_id\": \"64dd8ee91e90cc31ac7670b8\"\n            }\n        ],\n        \"totalAmount\": 256415.6,\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af129\",\n            \"name\": \"OutdoorAdventures\",\n            \"address\": {\n                \"street\": \"789 Nature Trail\",\n                \"city\": \"Explorerville\",\n                \"state\": \"Adventureland\",\n                \"postalCode\": \"62345\",\n                \"_id\": \"64dd92ba74440f3e505503af\"\n            },\n            \"phoneNumber\": \"555-000-1111\"\n        },\n        \"customer\": {\n            \"_id\": \"64d61a77d5adbe20e89af0fa\",\n            \"name\": \"Jane Smith\",\n            \"address\": {\n                \"street\": \"456 Elm Avenue\",\n                \"city\": \"Townsville\",\n                \"state\": \"NY\",\n                \"postalCode\": \"67890\",\n                \"country\": \"USA\",\n                \"_id\": \"64dd92ba74440f3e505503ae\"\n            },\n            \"phoneNumber\": \"555-987-6543\",\n            \"email\": \"janesmith@example.com\"\n        },\n        \"employee\": {\n            \"_id\": \"64dc4a4bd9e6964a76db3181\",\n            \"firstName\": \"Soe\",\n            \"lastName\": \"Moe\",\n            \"NRC\": \"5/yabana(n)222301\",\n            \"gender\": \"Female\",\n            \"address\": {\n                \"street\": \"Beta Road\",\n                \"city\": \"yangon\",\n                \"state\": \"Yangon\",\n                \"postalCode\": \"54321\",\n                \"_id\": \"64dc4a4bd9e6964a76db3182\"\n            },\n            \"phoneNumber\": \"555-111-2882\",\n            \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n            \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n            \"store\": \"64d6c9d4d5adbe20e89af129\",\n            \"__v\": 0\n        },\n        \"date\": \"2023-08-17T03:07:21.546Z\",\n        \"__v\": 0\n    }\n]"
+								},
+								{
+									"name": "get all sale with JWT",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{own}}/api/sales/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"sales",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1489"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5d1-a0BYD03Avp3m9jaLqjGKDX2mnfw\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 04:48:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"64dd8ee91e90cc31ac7670b6\",\n        \"products\": [\n            {\n                \"product\": {\n                    \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n                    \"name\": \"Product One\",\n                    \"price\": 10900.3,\n                    \"category\": \"64d64ab6d5adbe20e89af113\",\n                    \"manufacturer\": \"64dc817967fd6164e3cec20a\",\n                    \"__v\": 0\n                },\n                \"quantity\": 20,\n                \"price\": 10900.3,\n                \"_id\": \"64dd8ee91e90cc31ac7670b7\"\n            },\n            {\n                \"product\": {\n                    \"_id\": \"64dd8946fb23f23631b4a128\",\n                    \"name\": \"Product Two\",\n                    \"price\": 1200.3,\n                    \"category\": \"64d64ab6d5adbe20e89af115\",\n                    \"manufacturer\": \"64dc817967fd6164e3cec20c\",\n                    \"__v\": 0\n                },\n                \"quantity\": 32,\n                \"price\": 1200.3,\n                \"_id\": \"64dd8ee91e90cc31ac7670b8\"\n            }\n        ],\n        \"totalAmount\": 256415.6,\n        \"store\": {\n            \"_id\": \"64d6c9d4d5adbe20e89af129\",\n            \"name\": \"OutdoorAdventures\",\n            \"address\": {\n                \"street\": \"789 Nature Trail\",\n                \"city\": \"Explorerville\",\n                \"state\": \"Adventureland\",\n                \"postalCode\": \"62345\",\n                \"_id\": \"64dda6933612182a0e0778f4\"\n            },\n            \"phoneNumber\": \"555-000-1111\"\n        },\n        \"customer\": {\n            \"_id\": \"64d61a77d5adbe20e89af0fa\",\n            \"name\": \"Jane Smith\",\n            \"address\": {\n                \"street\": \"456 Elm Avenue\",\n                \"city\": \"Townsville\",\n                \"state\": \"NY\",\n                \"postalCode\": \"67890\",\n                \"country\": \"USA\",\n                \"_id\": \"64dda6933612182a0e0778f5\"\n            },\n            \"phoneNumber\": \"555-987-6543\",\n            \"email\": \"janesmith@example.com\"\n        },\n        \"employee\": {\n            \"_id\": \"64dc4a4bd9e6964a76db3181\",\n            \"firstName\": \"Soe\",\n            \"lastName\": \"Moe\",\n            \"NRC\": \"5/yabana(n)222301\",\n            \"gender\": \"Female\",\n            \"address\": {\n                \"street\": \"Beta Road\",\n                \"city\": \"yangon\",\n                \"state\": \"Yangon\",\n                \"postalCode\": \"54321\",\n                \"_id\": \"64dc4a4bd9e6964a76db3182\"\n            },\n            \"phoneNumber\": \"555-111-2882\",\n            \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n            \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n            \"store\": \"64d6c9d4d5adbe20e89af129\",\n            \"__v\": 0\n        },\n        \"date\": \"2023-08-17T03:07:21.546Z\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get sale by id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{own}}/api/sales/64e27bb7881eda24346de9ac",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"sales",
+										"64e27bb7881eda24346de9ac"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get sale by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{own}}/api/sales/64dd8ee91e90cc31ac7670b6",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"sales",
+												"64dd8ee91e90cc31ac7670b6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1487"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5cf-eYsbmAK72k+q/MltHo5oUHS+Elw\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 03:24:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dd8ee91e90cc31ac7670b6\",\n    \"products\": [\n        {\n            \"product\": {\n                \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n                \"name\": \"Product One\",\n                \"price\": 10900.3,\n                \"category\": \"64d64ab6d5adbe20e89af113\",\n                \"manufacturer\": \"64dc817967fd6164e3cec20a\",\n                \"__v\": 0\n            },\n            \"quantity\": 20,\n            \"price\": 10900.3,\n            \"_id\": \"64dd8ee91e90cc31ac7670b7\"\n        },\n        {\n            \"product\": {\n                \"_id\": \"64dd8946fb23f23631b4a128\",\n                \"name\": \"Product Two\",\n                \"price\": 1200.3,\n                \"category\": \"64d64ab6d5adbe20e89af115\",\n                \"manufacturer\": \"64dc817967fd6164e3cec20c\",\n                \"__v\": 0\n            },\n            \"quantity\": 32,\n            \"price\": 1200.3,\n            \"_id\": \"64dd8ee91e90cc31ac7670b8\"\n        }\n    ],\n    \"totalAmount\": 256415.6,\n    \"store\": {\n        \"_id\": \"64d6c9d4d5adbe20e89af129\",\n        \"name\": \"OutdoorAdventures\",\n        \"address\": {\n            \"street\": \"789 Nature Trail\",\n            \"city\": \"Explorerville\",\n            \"state\": \"Adventureland\",\n            \"postalCode\": \"62345\",\n            \"_id\": \"64dd92da74440f3e505503c1\"\n        },\n        \"phoneNumber\": \"555-000-1111\"\n    },\n    \"customer\": {\n        \"_id\": \"64d61a77d5adbe20e89af0fa\",\n        \"name\": \"Jane Smith\",\n        \"address\": {\n            \"street\": \"456 Elm Avenue\",\n            \"city\": \"Townsville\",\n            \"state\": \"NY\",\n            \"postalCode\": \"67890\",\n            \"country\": \"USA\",\n            \"_id\": \"64dd92da74440f3e505503c0\"\n        },\n        \"phoneNumber\": \"555-987-6543\",\n        \"email\": \"janesmith@example.com\"\n    },\n    \"employee\": {\n        \"_id\": \"64dc4a4bd9e6964a76db3181\",\n        \"firstName\": \"Soe\",\n        \"lastName\": \"Moe\",\n        \"NRC\": \"5/yabana(n)222301\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64dc4a4bd9e6964a76db3182\"\n        },\n        \"phoneNumber\": \"555-111-2882\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": \"64d6c9d4d5adbe20e89af129\",\n        \"__v\": 0\n    },\n    \"date\": \"2023-08-17T03:07:21.546Z\",\n    \"__v\": 0\n}"
+								},
+								{
+									"name": "get sale by id with JWT",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{own}}/api/sales/64dd8ee91e90cc31ac7670b6",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"sales",
+												"64dd8ee91e90cc31ac7670b6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1487"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5cf-lW4fxPrAontNLjuM1p2AFe1MAd0\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 04:48:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"64dd8ee91e90cc31ac7670b6\",\n    \"products\": [\n        {\n            \"product\": {\n                \"_id\": \"64dc91ee9d42e4b6df741d2b\",\n                \"name\": \"Product One\",\n                \"price\": 10900.3,\n                \"category\": \"64d64ab6d5adbe20e89af113\",\n                \"manufacturer\": \"64dc817967fd6164e3cec20a\",\n                \"__v\": 0\n            },\n            \"quantity\": 20,\n            \"price\": 10900.3,\n            \"_id\": \"64dd8ee91e90cc31ac7670b7\"\n        },\n        {\n            \"product\": {\n                \"_id\": \"64dd8946fb23f23631b4a128\",\n                \"name\": \"Product Two\",\n                \"price\": 1200.3,\n                \"category\": \"64d64ab6d5adbe20e89af115\",\n                \"manufacturer\": \"64dc817967fd6164e3cec20c\",\n                \"__v\": 0\n            },\n            \"quantity\": 32,\n            \"price\": 1200.3,\n            \"_id\": \"64dd8ee91e90cc31ac7670b8\"\n        }\n    ],\n    \"totalAmount\": 256415.6,\n    \"store\": {\n        \"_id\": \"64d6c9d4d5adbe20e89af129\",\n        \"name\": \"OutdoorAdventures\",\n        \"address\": {\n            \"street\": \"789 Nature Trail\",\n            \"city\": \"Explorerville\",\n            \"state\": \"Adventureland\",\n            \"postalCode\": \"62345\",\n            \"_id\": \"64dda6b03612182a0e0778fe\"\n        },\n        \"phoneNumber\": \"555-000-1111\"\n    },\n    \"customer\": {\n        \"_id\": \"64d61a77d5adbe20e89af0fa\",\n        \"name\": \"Jane Smith\",\n        \"address\": {\n            \"street\": \"456 Elm Avenue\",\n            \"city\": \"Townsville\",\n            \"state\": \"NY\",\n            \"postalCode\": \"67890\",\n            \"country\": \"USA\",\n            \"_id\": \"64dda6b03612182a0e0778fd\"\n        },\n        \"phoneNumber\": \"555-987-6543\",\n        \"email\": \"janesmith@example.com\"\n    },\n    \"employee\": {\n        \"_id\": \"64dc4a4bd9e6964a76db3181\",\n        \"firstName\": \"Soe\",\n        \"lastName\": \"Moe\",\n        \"NRC\": \"5/yabana(n)222301\",\n        \"gender\": \"Female\",\n        \"address\": {\n            \"street\": \"Beta Road\",\n            \"city\": \"yangon\",\n            \"state\": \"Yangon\",\n            \"postalCode\": \"54321\",\n            \"_id\": \"64dc4a4bd9e6964a76db3182\"\n        },\n        \"phoneNumber\": \"555-111-2882\",\n        \"workStartDate\": \"2023-01-15T00:00:00.000Z\",\n        \"birthDate\": \"1990-05-10T00:00:00.000Z\",\n        \"store\": \"64d6c9d4d5adbe20e89af129\",\n        \"__v\": 0\n    },\n    \"date\": \"2023-08-17T03:07:21.546Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "create sale",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGQyNTEwYTFhMjU1MmIwNmRlZTQ1NiIsImlhdCI6MTY5MjIxNDU0NH0.vUi7zFVRPsQ6OqjY_jmTLxHwp-0RXoeDsEYBueca6xU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"products\":[\n        {\n            \"product\":\"64dc91ee9d42e4b6df741d2b\",\n            \"price\":10900.3,\n            \"quantity\":3\n        },\n        {\n            \"product\":\"64e260de76af424a3237c564\",\n            \"price\":1200.3,\n            \"quantity\":1\n        }\n    ],\n    \"customer\":\"64d61a77d5adbe20e89af0fa\",\n    \"store\":\"64d6c9d4d5adbe20e89af129\",\n    \"employee\":\"64dc4a4bd9e6964a76db3181\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{own}}/api/sales/",
+									"host": [
+										"{{own}}"
+									],
+									"path": [
+										"api",
+										"sales",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create sale",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"products\":[\n        {\n            \"product\":\"64dc91ee9d42e4b6df741d2b\",\n            \"price\":10900.3,\n            \"quantity\":20\n\n        },\n        {\n            \"product\":\"64dd8946fb23f23631b4a128\",\n            \"price\":1200.3,\n            \"quantity\":32\n\n        }\n    ],\n    \"customer\":\"64d61a77d5adbe20e89af0fa\",\n    \"store\":\"64dc4a4bd9e6964a76db3181\",\n    \"employee\":\"64dc4a4bd9e6964a76db3181\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{own}}/api/sales/",
+											"host": [
+												"{{own}}"
+											],
+											"path": [
+												"api",
+												"sales",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "426"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1aa-HR+x9VKeXyuaCgYmBPUOtbGgkNU\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 17 Aug 2023 03:07:21 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"products\": [\n        {\n            \"product\": \"64dc91ee9d42e4b6df741d2b\",\n            \"quantity\": 20,\n            \"price\": 10900.3,\n            \"_id\": \"64dd8ee91e90cc31ac7670b7\"\n        },\n        {\n            \"product\": \"64dd8946fb23f23631b4a128\",\n            \"quantity\": 32,\n            \"price\": 1200.3,\n            \"_id\": \"64dd8ee91e90cc31ac7670b8\"\n        }\n    ],\n    \"totalAmount\": 256415.6,\n    \"store\": \"64dc4a4bd9e6964a76db3181\",\n    \"customer\": \"64d61a77d5adbe20e89af0fa\",\n    \"employee\": \"64dc4a4bd9e6964a76db3181\",\n    \"_id\": \"64dd8ee91e90cc31ac7670b6\",\n    \"date\": \"2023-08-17T03:07:21.546Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "pot3000",
+			"value": "localhost:3000/api"
+		},
+		{
+			"key": "own",
+			"value": "localhost:400",
+			"type": "string"
+		}
+	]
+}

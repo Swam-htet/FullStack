@@ -31,21 +31,6 @@ async function getManufacturerByID(req, res, next) {
     }
 }
 
-// get manufacturer By name
-async function getManufacturerByName(req, res, next) {
-    let name = req.params.name;
-    try {
-        let manufacturer = await manufacturerService.getManufacturerByName(name);
-        if (!manufacturer) {
-            res.status(400).json({message: `Manufacturer Name :${name} not found`});
-        } else {
-            res.status(200).json(manufacturer);
-        }
-    } catch (error) {
-        res.status(400).json({message: `Manufacturer Name :${name} not found`});
-    }
-}
-
 // create manufacturer
 async function createManufacturer(req, res, next) {
     let body = req.body;
@@ -95,7 +80,6 @@ async function deleteManufacturerByID(req, res, next) {
 module.exports = {
     getAllManufacturer,
     getManufacturerByID,
-    getManufacturerByName,
     createManufacturer,
     updateManufacturerByID,
     deleteManufacturerByID,

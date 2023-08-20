@@ -1,14 +1,12 @@
-var express = require("express");
-var router = express.Router();
+let express = require("express");
+let router = express.Router();
 
 // import customer controller
-var customers = require("./../controller/customerController");
+let customers = require("./../controller/customerController");
 
 router.get("/", customers.getAllCustomer);
 
 router.get("/:id", customers.getCustomerByID);
-
-router.get("/:name", customers.getCustomerByName);
 
 router.post("/", customers.createCustomer);
 

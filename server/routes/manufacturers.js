@@ -8,8 +8,6 @@ router.get("/", manufacturers.getAllManufacturer);
 
 router.get("/:id", manufacturers.getManufacturerByID);
 
-// router.get("/:name", manufacturers.getManufacturerByName);
-
 router.post("/", manufacturers.createManufacturer);
 
 router.put("/:id", manufacturers.updateManufacturerByID);

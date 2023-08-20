@@ -7,14 +7,7 @@ async function getAllStore() {
 
 // get store by id
 async function getStoreByID(id) {
-    let store = await Store.findById(id);
-    return store;
-}
-
-// get store by name
-async function getStoreByName(name) {
-    let store = await Store.find({"name": name});
-    return store;
+    return Store.findById(id);
 }
 
 // create store
@@ -25,20 +18,17 @@ async function createStore(store) {
 
 // update store
 async function updateStoreByID(id, body) {
-    let store = await Store.findByIdAndUpdate(id, body, {new: true});
-    return store;
+    return Store.findByIdAndUpdate(id, body, {new: true});
 }
 
 // delete store
 async function deleteStoreByID(id) {
-    let store = await Store.findByIdAndDelete(id);
-    return store;
+    return Store.findByIdAndDelete(id);
 }
 
 module.exports = {
     getAllStore,
     getStoreByID,
-    getStoreByName,
     createStore,
     updateStoreByID,
     deleteStoreByID

@@ -1,36 +1,36 @@
 // node module import
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var mongoose = require("mongoose");
+let createError = require("http-errors");
+let express = require("express");
+let path = require("path");
+let cookieParser = require("cookie-parser");
+let logger = require("morgan");
+let mongoose = require("mongoose");
 
 // db connection import
-var {db} = require("./Config/db_config");
+let {db} = require("./Config/db_config");
 
 // auth middleware import
 let auth = require('./middleware/auth');
 
 
 // cors module import
-var cors = require("cors");
+let cors = require("cors");
 
 // node module for route
-var indexRouter = require("./routes/index");
-var userRouter = require("./routes/users");
-var categoryRouter = require("./routes/categories");
-var customerRouter = require("./routes/customers");
-var storeRouter = require("./routes/stores");
-var employeeRouter = require("./routes/employees");
-var manufacturerRouter = require("./routes/manufacturers");
-var productRouter = require("./routes/products");
-var stockRouter = require("./routes/stocks");
-var saleRouter = require("./routes/sales");
+let indexRouter = require("./routes/index");
+let userRouter = require("./routes/users");
+let categoryRouter = require("./routes/categories");
+let customerRouter = require("./routes/customers");
+let storeRouter = require("./routes/stores");
+let employeeRouter = require("./routes/employees");
+let manufacturerRouter = require("./routes/manufacturers");
+let productRouter = require("./routes/products");
+let stockRouter = require("./routes/stocks");
+let saleRouter = require("./routes/sales");
 
 
 // install express framework
-var app = express();
+let app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -56,10 +56,16 @@ mongoose.connect(db, {
     console.log("MongoDB connected")
 }).catch(error => console.log)
 
+// home page
+app.use("/", indexRouter);
+
+// login
+app.use("/api/users", userRouter);
+
+// check JWT
+// app.use(auth.verifyUserToken);
 
 // route register
-app.use("/api", indexRouter);
-app.use("/api/users", userRouter);
 app.use("/api/categories", categoryRouter);
 app.use("/api/customers", customerRouter);
 app.use("/api/stores", storeRouter);

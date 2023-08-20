@@ -8,14 +8,12 @@ let Stock = require("../model/stock");
 
 // get all sale
 async function getAllSale() {
-    let sale = await Sale.find().populate(['customer', 'employee', 'store']).populate('products.product');
-    return sale;
+    return Sale.find().populate(['customer', 'employee', 'store']).populate('products.product');
 }
 
 // get sale by id
 async function getSaleByID(id) {
-    let sale = await Sale.findById(id).populate(['customer', 'employee', 'store']).populate('products.product');
-    return sale;
+    return Sale.findById(id).populate(['customer', 'employee', 'store']).populate('products.product');
 }
 
 // create sale
@@ -85,29 +83,18 @@ async function createSale(sale) {
         totalAmount,
     });
 
-
+    await newSale.save();
+    await newSale.populate(['customer', 'employee', 'store']);
     // return
-    return newSale.save();
+    return newSale.populate('products.product');
 
 
 }
 
-// // update sale
-// async function updateSaleByID(id, body) {
-//     let sale = await Sale.findByIdAndUpdate(id, body, {new: true});
-//     return sale.populate(['customer','employee','store']).populate('products.product');
-// }
 
-// delete sale
-async function deleteSaleByID(id) {
-    let sale = await Sale.findByIdAndDelete(id);
-    return sale.populate(['customer', 'employee', 'store']).populate('products.product');
-}
 
 module.exports = {
     getAllSale,
     getSaleByID,
     createSale,
-    // updateSaleByID,
-    deleteSaleByID
 }

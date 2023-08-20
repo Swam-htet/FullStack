@@ -10,8 +10,4 @@ router.get("/:id", sales.getSaleByID);
 
 router.post("/", sales.createSale);
 
-// router.put("/:id", sales.updateSaleByID);
-
-router.delete("/:id", sales.deleteSaleByID);
-
 module.exports = router;

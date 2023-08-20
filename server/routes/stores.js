@@ -2,19 +2,16 @@ var express = require("express");
 var router = express.Router();
 
 // import store controller
-var stores = require("./../controller/storeController");
+let stores = require("./../controller/storeController");
 
 // import employee controller
-var employees = require("./../controller/employeeController");
+let employees = require("./../controller/employeeController");
 
 // get all stores
 router.get("/", stores.getAllStore);
 
 // get store by id
 router.get("/:id", stores.getStoreByID);
-
-// get store by name
-router.get("/:name", stores.getStoreByName);
 
 // create store
 router.post("/", stores.createStore);

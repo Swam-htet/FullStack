@@ -8,14 +8,7 @@ async function getAllManufacturer() {
 
 // get manufacturer by id
 async function getManufacturerByID(id) {
-    let manufacturer = await Manufacturer.findById(id);
-    return manufacturer;
-}
-
-// get manufacturer by name
-async function getManufacturerByName(name) {
-    let manufacturer = await Manufacturer.find({"name": name});
-    return manufacturer;
+    return Manufacturer.findById(id);
 }
 
 // create manufacturer
@@ -26,20 +19,17 @@ async function createManufacturer(manufacturer) {
 
 // update manufacturer
 async function updateManufacturer(id, body) {
-    let manufacturer = await Manufacturer.findByIdAndUpdate(id, body, {new: true});
-    return manufacturer;
+    return  Manufacturer.findByIdAndUpdate(id, body, {new: true});
 }
 
 // delete manufacturer
 async function deleteManufacturer(id) {
-    let manufacturer = await Manufacturer.findByIdAndDelete(id);
-    return manufacturer;
+    return Manufacturer.findByIdAndDelete(id);
 }
 
 module.exports = {
     getAllManufacturer,
     getManufacturerByID,
-    getManufacturerByName,
     createManufacturer,
     updateManufacturer,
     deleteManufacturer

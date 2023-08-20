@@ -8,8 +8,6 @@ router.get("/", categories.getAllCategories);
 
 router.get("/:id", categories.getCategoryByID);
 
-// router.get("/:name", categories.getCategoryByName);
-
 router.post("/", categories.createCategory);
 
 router.put("/:id", categories.updateCategoryByID);

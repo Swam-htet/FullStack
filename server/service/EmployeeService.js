@@ -18,14 +18,8 @@ async function getEmployeeByStoreID(store_id) {
 
 // get employee by store_id and employee_id
 async function getEmployeeByStoreIDAndEmployeeID(store_id, employee_id) {
-    return await Employee.find({_id: employee_id,store:store_id});
+    return Employee.find({_id: employee_id,store:store_id});
 }
-
-// // get employee by store_id and employee_name
-// async function getEmployeeByStoreIDAndEmployeeName(store_id, employee_name) {
-//     let employee = await Store.find({"name": employee_name, store: {_id: store_id}});
-//     return employee;
-// }
 
 // create employee with store_id
 async function createEmployee(employee, store_id) {
@@ -50,7 +44,6 @@ module.exports = {
     getEmployeeByID,
     getEmployeeByStoreID,
     getEmployeeByStoreIDAndEmployeeID,
-    // getEmployeeByStoreIDAndEmployeeName,
     createEmployee,
     updateEmployeeByID,
     deleteEmployeeByID

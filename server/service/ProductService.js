@@ -3,8 +3,7 @@ let mongoose = require("mongoose");
 
 // get all product
 async function getAllProduct() {
-    let product = await Product.find().populate('category').populate("manufacturer");
-    return product;
+    return Product.find().populate('category').populate("manufacturer");
 
 }
 
@@ -16,11 +15,6 @@ async function getProductByID(id) {
     return product;
 }
 
-// get product by name
-async function getProductByName(name) {
-    let product = await Product.find({"name": name});
-    return product;
-}
 
 // create product
 async function createProduct(product) {
@@ -38,20 +32,17 @@ async function createProduct(product) {
 
 // update product
 async function updateProductByID(id, body) {
-    let product = await Product.findByIdAndUpdate(id, body, {new: true}).populate("manufacturer").populate('category');
-    return product;
+    return Product.findByIdAndUpdate(id, body, {new: true}).populate("manufacturer").populate('category');
 }
 
 // delete product
 async function deleteProductByID(id) {
-    let product = await Product.findByIdAndDelete(id).populate("manufacturer").populate("category");
-    return product;
+    return Product.findByIdAndDelete(id).populate("manufacturer").populate("category");
 }
 
 module.exports = {
     getAllProduct,
     getProductByID,
-    getProductByName,
     createProduct,
     updateProductByID,
     deleteProductByID

@@ -63,22 +63,6 @@ async function getEmployeeByStoreIDAndEmployeeID(req, res, next) {
     }
 }
 
-// // get employee by store id and employee name
-// async function getEmployeeByStoreIDAndEmployeeName(req, res, next) {
-//     let emp_name = req.params.emp_name;
-//     let store_id = req.params.store_id;
-//     try {
-//         let employee = await employeeService.getEmployeeByStoreIDAndEmployeeName(store_id, emp_name);
-//         if (!employee) {
-//             res.status(400).json({message: `Employee Name :${emp_name} not found in Store ID: ${store_id}`});
-//         } else {
-//             res.status(200).json(employee);
-//         }
-//     } catch (error) {
-//         res.status(400).json({message: `Employee Name :${emp_name} not found in Store ID: ${store_id}`});
-//     }
-// }
-
 // create store
 async function createEmployeeByStoreID(req, res, next) {
     let body = req.body;
@@ -135,7 +119,6 @@ module.exports = {
     getEmployeeByEmployeeID,
     getEmployeeByStoreID,
     getEmployeeByStoreIDAndEmployeeID,
-    // getEmployeeByStoreIDAndEmployeeName,
     createEmployeeByStoreID,
     updateEmployeeByID,
     deleteEmployeeByID,

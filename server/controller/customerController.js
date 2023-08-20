@@ -31,21 +31,6 @@ async function getCustomerByID(req, res, next) {
     }
 }
 
-// get customer by name
-async function getCustomerByName(req, res, next) {
-    let name = req.params.name;
-    try {
-        let customer = await customerService.getCustomerByName(name);
-        if (!customer) {
-            res.status(400).json({message: `Category Name :${id} not found`});
-        } else {
-            res.status(200).json(customer);
-        }
-    } catch (error) {
-        res.status(400).json({message: `Category Name :${id} not found`});
-    }
-}
-
 // create customer
 async function createCustomer(req, res, next) {
     let body = req.body;
@@ -95,7 +80,6 @@ async function deleteCustomerByID(req, res, next) {
 module.exports = {
     getAllCustomer,
     getCustomerByID,
-    getCustomerByName,
     createCustomer,
     updateCustomerByID,
     deleteCustomerByID,

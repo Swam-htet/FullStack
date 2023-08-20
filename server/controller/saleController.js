@@ -30,7 +30,6 @@ async function getSaleByID(req, res, next) {
     }
 }
 
-
 // create sale
 async function createSale(req, res, next) {
     let body = req.body;
@@ -46,41 +45,8 @@ async function createSale(req, res, next) {
     }
 }
 
-// // update sale by id
-// async function updateSaleByID(req, res, next) {
-//     let id = req.params.id;
-//     let updateBody = req.body;
-//     try {
-//         let sale = await saleService.updateSaleByID(id,updateBody);
-//         if (!sale) {
-//             res.status(400).json({message: `Sale ID :${id} not found`});
-//         } else {
-//             res.status(200).json(sale);
-//         }
-//     } catch (error) {
-//         res.status(400).json({message: `Sale ID :${id} not found`});
-//     }
-// }
-
-// delete sale by id
-async function deleteSaleByID(req, res, next) {
-    let id = req.params.id;
-    try {
-        let sale = await saleService.deleteSaleByID(id);
-        if (!sale) {
-            res.status(400).json({message: `Sale ID :${id} not found`});
-        } else {
-            res.status(200).json(sale);
-        }
-    } catch (error) {
-        res.status(400).json({message: `Sale ID :${id} not found`});
-    }
-}
-
 module.exports = {
     getAllSale,
     getSaleByID,
     createSale,
-    // updateSaleByID,
-    deleteSaleByID,
 }

@@ -31,21 +31,6 @@ async function getCategoryByID(req, res, next) {
     }
 }
 
-// get category by id
-async function getCategoryByName(req, res, next) {
-    let name = req.params.name;
-    try {
-        let category = await categoryService.getCategoryByName(name);
-        if (!category) {
-            res.status(400).json({message: `Category Name :${name} not found`});
-        } else {
-            res.status(200).json(category);
-        }
-    } catch (error) {
-        res.status(400).json({message: `Category Name :${name} not found`});
-    }
-}
-
 // create category
 async function createCategory(req, res, next) {
     let body = req.body;
@@ -95,7 +80,6 @@ async function deleteCategoryByID(req, res, next) {
 module.exports = {
     getAllCategories,
     getCategoryByID,
-    getCategoryByName,
     createCategory,
     updateCategoryByID,
     deleteCategoryByID,

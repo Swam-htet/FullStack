@@ -31,21 +31,6 @@ async function getStoreByID(req, res, next) {
     }
 }
 
-// get store by name
-async function getStoreByName(req, res, next) {
-    let name = req.params.name;
-    try {
-        let store = await storeService.getStoreByName(name);
-        if (!store) {
-            res.status(400).json({message: `Store Name :${id} not found`});
-        } else {
-            res.status(200).json(store);
-        }
-    } catch (error) {
-        res.status(400).json({message: `Store Name :${id} not found`});
-    }
-}
-
 // create store
 async function createStore(req, res, next) {
     let body = req.body;
@@ -95,7 +80,6 @@ async function deleteStoreByID(req, res, next) {
 module.exports = {
     getAllStore,
     getStoreByID,
-    getStoreByName,
     createStore,
     updateStoreByID,
     deleteStoreByID,

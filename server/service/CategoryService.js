@@ -7,15 +7,9 @@ async function getAllCategories() {
 
 // get category by id
 async function getCategoryByID(id) {
-    let category = await Category.findById(id);
-    return category;
+    return Category.findById(id);
 }
 
-// get category by name
-async function getCategoryByName(name) {
-    let category = await Category.find({"name": name});
-    return category;
-}
 
 // create category
 async function createCategory(category) {
@@ -26,20 +20,17 @@ async function createCategory(category) {
 // update category
 async function updateCategoryByID(id, body) {
     console.log("Update Body : ", body)
-    let category = await Category.findByIdAndUpdate(id, body, {new: true});
-    return category;
+    return Category.findByIdAndUpdate(id, body, {new: true});
 }
 
 // delete category
 async function deleteCategoryByID(id) {
-    let category = await Category.findByIdAndDelete(id);
-    return category;
+    return Category.findByIdAndDelete(id);
 }
 
 module.exports = {
     getAllCategories,
     getCategoryByID,
-    getCategoryByName,
     createCategory,
     updateCategoryByID,
     deleteCategoryByID

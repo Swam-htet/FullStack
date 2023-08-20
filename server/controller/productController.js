@@ -30,21 +30,6 @@ async function getProductByID(req, res, next) {
     }
 }
 
-// get product by name
-async function getProductByName(req, res, next) {
-    let name = req.params.name;
-    try {
-        let product = await productService.getProductByName(name);
-        if (!product) {
-            res.status(400).json({message: `Product Name :${name} not found.`});
-        } else {
-            res.status(200).json(product);
-        }
-    } catch (error) {
-        res.status(400).json({message: `Product Name :${name} not found.`});
-    }
-}
-
 // create product
 async function createProduct(req, res, next) {
     let body = req.body;
@@ -98,7 +83,6 @@ async function deleteProductByID(req, res, next) {
 module.exports = {
     getAllProduct,
     getProductByID,
-    getProductByName,
     createProduct,
     updateProductByID,
     deleteProductByID,

@@ -1,8 +1,8 @@
-var express = require("express");
-var router = express.Router();
+let express = require("express");
+let router = express.Router();
 
 // import manufacturer controller
-var stocks = require("./../controller/stockController");
+let stocks = require("./../controller/stockController");
 
 router.get("/", stocks.getAllStock);
 
