@@ -51,7 +51,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("MongoDB connected");
+    console.log("MongoDB atlas connected");
   })
   .catch((error) => console.log);
 
@@ -62,7 +62,7 @@ app.use("/", indexRouter);
 app.use("/api/users", userRouter);
 
 // check JWT
-// app.use(auth.verifyUserToken);
+app.use(auth.verifyUserToken);
 
 // route register
 app.use("/api/categories", categoryRouter);

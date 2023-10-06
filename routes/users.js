@@ -1,6 +1,9 @@
 var express = require("express");
 var router = express.Router();
 
+// auth middleware import
+let auth = require("../middleware/auth");
+
 // import user controller
 var users = require("./../controller/userController");
 
@@ -8,7 +11,7 @@ var users = require("./../controller/userController");
 router.get("/", users.getAllUser);
 
 // get by user id
-router.get("/:id",users.getUserByID);
+router.get("/:id", users.getUserByID);
 
 // user register
 router.post("/", users.userRegister);
