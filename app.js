@@ -1,31 +1,28 @@
 // node module import
-let createError = require("http-errors");
 let express = require("express");
 let path = require("path");
 let cookieParser = require("cookie-parser");
 let logger = require("morgan");
+let dotenv = require('dotenv').config();
 let mongoose = require("mongoose");
-
-// db connection import
-let { db } = require("./Config/db_config");
-
-// auth middleware import
-let auth = require("./middleware/auth");
-
-// cors module import
 let cors = require("cors");
 
-// node module for route
-let indexRouter = require("./routes/index");
-let userRouter = require("./routes/users");
-let categoryRouter = require("./routes/categories");
-let customerRouter = require("./routes/customers");
-let storeRouter = require("./routes/stores");
-let employeeRouter = require("./routes/employees");
-let manufacturerRouter = require("./routes/manufacturers");
-let productRouter = require("./routes/products");
-let stockRouter = require("./routes/stocks");
-let saleRouter = require("./routes/sales");
+// node module import for route
+let indexRouter = require("./routes/index.route");
+let userRouter = require("./routes/users.route");
+let categoryRouter = require("./routes/categories.route");
+let customerRouter = require("./routes/customers.route");
+let storeRouter = require("./routes/stores.route");
+let employeeRouter = require("./routes/employees.route");
+let manufacturerRouter = require("./routes/manufacturers.route");
+let productRouter = require("./routes/products.route");
+let stockRouter = require("./routes/stocks.route");
+let saleRouter = require("./routes/sales.route");
+
+// middleware import
+const {ErrorHandler} = require("./middleware/error.middleware");
+const {NotFoundHandler} = require("./middleware/not-found.middleware");
+
 
 // install express framework
 let app = express();
@@ -46,23 +43,25 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // mongoDB connection
 mongoose
-  .connect(db, {
+  .connect(process.env.ATLAS, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
     console.log("MongoDB atlas connected");
   })
-  .catch((error) => console.log);
+  .catch(console.log);
 
 // home page
 app.use("/", indexRouter);
+app.use("/api", indexRouter);
+
 
 // login
 app.use("/api/users", userRouter);
 
 // check JWT
-app.use(auth.verifyUserToken);
+// app.use(auth.verifyUserToken);
 
 // route register
 app.use("/api/categories", categoryRouter);
@@ -75,19 +74,11 @@ app.use("/api/stocks", stockRouter);
 app.use("/api/sales", saleRouter);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
-  next(createError(404));
-});
+app.use(NotFoundHandler);
 
 // error handler
-app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render("error");
-});
+app.use(ErrorHandler);
 
 module.exports = app;
+
+

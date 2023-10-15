@@ -1,60 +1,60 @@
 # Retail API
 This is my rest api application with ExpressJS for REST API server and mongoDB atlas. For authentication, I'm planning to use JWT authentication. 
 
-get - /api/stores
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/storesRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/customers
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/customersRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/categories
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/categoriesRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/manufacturers
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/manufacturersRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/products
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/productsRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/stocks
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/stocksRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/sales
-get - /api/stores/ID
-post - /api/stores
-put - /api/stores/ID
-delete - /api/stores/ID
+get - /api/salesRoute
+get - /api/storesRoute/ID
+post - /api/storesRoute
+put - /api/storesRoute/ID
+delete - /api/storesRoute/ID
 
 
-get - /api/users
+get - /api/usersRoute
 
 
-post - /api/users/login
+post - /api/usersRoute/login
 
-post - /api/users/register
+post - /api/usersRoute/register
 
 
