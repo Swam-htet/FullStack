@@ -43,12 +43,12 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // mongoDB connection
 mongoose
-  .connect(process.env.ATLAS, {
+  .connect(process.env.DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("MongoDB atlas connected");
+    console.log("MongoDB connected");
   })
   .catch(console.log);
 
