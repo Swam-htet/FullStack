@@ -12,8 +12,14 @@ async function getUserByID(id) {
 }
 
 async function userRegister(user) {
+
+    // generate salt
     const salt = await bcrypt.genSalt(10);
+
+    // hash the password
     const hashPassword = await bcrypt.hash(user.password, salt);
+
+    // create new user
     let newUser = new User({
         firstName:user.firstName,
         lastName:user.lastName,
@@ -22,6 +28,8 @@ async function userRegister(user) {
         dateOfBirth: new Date(user.dateOfBirth),
         password: hashPassword
     });
+
+    // save to the database and return 
     return newUser.save();
 }
 
