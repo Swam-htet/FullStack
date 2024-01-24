@@ -12,14 +12,19 @@
 
 const dayjs = require('dayjs');
 
-const responseFomater = (success, payload, message) => {
-    return {
+const responseFormatter = (success, payload, message) => {
+    let response = {
         success: success,
         payload: payload,
         message: message,
-        //     2024-01-24 09:10:42
         issuedAt: dayjs(new Date()).format("YYYY-MM-DD HH:mm:ss")
+    };
+
+    // if payload is null, remove it from response then return it
+    if (payload === null) {
+        delete response.payload;
     }
+    return response;
 }
 
-module.exports = responseFomater;
+module.exports = responseFormatter;
